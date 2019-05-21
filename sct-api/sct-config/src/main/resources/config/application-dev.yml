@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  zipkin:
+    base-url: http://sct-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:5001
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,20 +1,22 @@
-package cn.tycoding.api.config;
+package cn.tycoding.api.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * @author tycoyyding
+ * API网关 Zuul
+ *
+ * @author tycoding
  * @date 2019-05-21
  */
-@EnableConfigServer
+@EnableZuulProxy
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConfigApplication {
+public class GatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigApplication.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
 }

@@ -7,16 +7,16 @@
         <artifactId>sct-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>sct-gateway</artifactId>
+    <artifactId>sct-monitor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sct-gateway</name>
+    <name>sct-monitor</name>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Zuul网关 -->
+        <!-- SpringBootAdmin服务端 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
         </dependency>
         <!-- 配置中心客户端 -->
         <dependency>

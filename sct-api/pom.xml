@@ -24,6 +24,9 @@
         <module>sct-eureka</module>
         <module>sct-config</module>
         <module>sct-auth</module>
+        <module>sct-gateway</module>
+        <module>sct-zipkin</module>
+        <module>sct-monitor</module>
     </modules>
 
     <dependencies>

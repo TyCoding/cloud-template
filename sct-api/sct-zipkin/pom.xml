@@ -7,17 +7,28 @@
         <artifactId>sct-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>sct-gateway</artifactId>
+    <artifactId>sct-zipkin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sct-gateway</name>
+    <name>sct-zipkin</name>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- Zuul网关 -->
+        <!-- ZipKin服务端，排除log4j依赖，避免冲突 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+        </dependency>
+
         <!-- 配置中心客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

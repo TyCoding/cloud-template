@@ -1,19 +1,18 @@
 server:
-  port: 8888
+  port: 9999
 
 spring:
   application:
-    name: sct-config
+    name: sct-gateway
   main:
     allow-bean-definition-overriding: true
 
   profiles:
-    active: native
+    active: dev
   cloud:
     config:
-      server:
-        native:
-          search-locations: classpath:/config/
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
 
 eureka:
   instance:
@@ -21,3 +20,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://sct-eureka:8761/eureka/
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

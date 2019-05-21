@@ -1,0 +1,30 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: sct-zipkin
+  main:
+    allow-bean-definition-overriding: true
+
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://sct-eureka:8761/eureka/
+
+management:
+  metrics:
+    web:
+      # 解决Zipkin报错IllegalArgumentException: Prometheus requires that all meters
+      server:
+        auto-time-requests: false
+

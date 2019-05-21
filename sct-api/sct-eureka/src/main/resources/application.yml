@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: sct-eureka
+  main:
+    allow-bean-definition-overriding: true
 
 eureka:
   instance:
@@ -14,3 +16,10 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,19 +1,18 @@
 server:
-  port: 8888
+  port: 3000
 
 spring:
   application:
-    name: sct-config
+    name: sct-auth
   main:
     allow-bean-definition-overriding: true
 
   profiles:
-    active: native
+    active: dev
   cloud:
     config:
-      server:
-        native:
-          search-locations: classpath:/config/
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
 
 eureka:
   instance:
