@@ -34,7 +34,7 @@
 
 最详细的搭建文档：
 
-[从零开始搭建SpringCloud脚手架]()
+[从零开始搭建SpringCloud脚手架](https://github.com/TyCoding/cloud-template/blob/master/cloud-template/doc/env-1.md)
 
 ## 计划
 
