@@ -1,0 +1,26 @@
+spring:
+  application:
+    # 应用名称
+    name: template-eureka
+  zipkin:
+    base-url: http://localhost:9411
+  boot:
+    admin:
+      client:
+        url: http://localhost:9004
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    # Eureka注册中心HOST主机地址，可以采用：1.直接配置IP；2.配置本地域名并修改本地hosts文件
+    hostname: localhost
+  client:
+    # 是否将自己注册到注册中心。因为项目中只有一个注册中心就是自己，所以无需再注册
+    register-with-eureka: false
+    # 是否从远程拉取其他注册中心，因为注册中心只有自己所以不需要。如果注册中心有多个，可以相互暴露，相互拉取
+    fetch-registry: false
+    service-url:
+      # 该注册中心连接地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

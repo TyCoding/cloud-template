@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      uri: http://locahost:8888
+      name: application-zuul
+      profile: dev
+#      label:

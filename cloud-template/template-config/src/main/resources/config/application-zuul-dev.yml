@@ -1,0 +1,31 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: template-zuul
+  zipkin:
+    base-url: http://localhost:9411
+  boot:
+    admin:
+      client:
+        url: http://localhost:9004
+
+eureka:
+  client:
+    service-url:
+      # Eureka注册中心连接地址
+      # 如果注册中心地址配置的域名，这里使用 http://域名/eureka/ 格式
+      defaultZone: http://localhost:8080/eureka/
+
+zuul:
+  routes:
+    # 路由名称，随意
+    template-admin:
+      # 路由地址
+      path: /api/admin/**
+      # 该路由地址对应的服务名称
+      serviceId: template-admin
+    template-auth:
+      path: /api/auth/**
+      serviceId: template-auth
