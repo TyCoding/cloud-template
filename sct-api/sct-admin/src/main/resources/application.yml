@@ -1,0 +1,21 @@
+server:
+  port: 4100
+
+spring:
+  application:
+    name: sct-admin
+
+
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://sct-eureka:8761/eureka/

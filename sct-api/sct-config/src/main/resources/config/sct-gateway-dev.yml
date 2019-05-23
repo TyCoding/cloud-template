@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    sct-auth:
+      path: /api/auth/**
+      serviceId: sct-auth
+    sct-admin:
+      path: /api/admin/**
+      serviceId: sct-admin
+

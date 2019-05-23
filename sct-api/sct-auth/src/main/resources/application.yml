@@ -1,11 +1,9 @@
 server:
-  port: 3000
+  port: 4000
 
 spring:
   application:
     name: sct-auth
-  main:
-    allow-bean-definition-overriding: true
 
   profiles:
     active: dev

@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: sct-gateway
-  main:
-    allow-bean-definition-overriding: true
 
   profiles:
     active: dev
@@ -21,9 +19,7 @@ eureka:
     service-url:
       defaultZone: http://sct-eureka:8761/eureka/
 
-# 暴露监控端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+zuul:
+  #需要忽略的头部信息，不在传播到其他服务
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken

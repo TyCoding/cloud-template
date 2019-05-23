@@ -27,6 +27,8 @@
         <module>sct-gateway</module>
         <module>sct-zipkin</module>
         <module>sct-monitor</module>
+        <module>sct-admin</module>
+        <module>sct-common</module>
     </modules>
 
     <dependencies>

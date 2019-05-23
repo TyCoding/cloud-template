@@ -13,6 +13,23 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- 模块依赖 -->
+        <dependency>
+            <groupId>cn.tycoding</groupId>
+            <artifactId>sct-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.tycoding</groupId>
+            <artifactId>sct-admin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!-- 配置中心客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.tycoding</groupId>
+        <artifactId>sct-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>sct-common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>sct-common</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <tk-mapper.version>4.1.5</tk-mapper.version>
+        <pagehelper.version>1.2.10</pagehelper.version>
+    </properties>
+
+    <dependencies>
+        <!-- Mybatis通用Mapper -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>${tk-mapper.version}</version>
+        </dependency>
+
+        <!-- Mybatis分页插件PageHelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: sct-auth
+    name: sct-monitor
   main:
     allow-bean-definition-overriding: true
 
