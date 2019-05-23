@@ -2,11 +2,11 @@
 
 ## 介绍
 
-`cloud-template`: 一个最基础的SpringCloud微服务项目搭建模板，没有具体的业务，提供最详细的SpringCloud搭建流程
+`cloud-template`: 一套极简的SpringCloud微服务项目模板，没有具体的业务，提供最详细的SpringCloud搭建流程
 
-`cloud-api`: 分布式微服务项目后端接口。正在开发...
+`sct-api`: 分布式微服务项目后端接口。正在开发...
 
-`cloud-app`: Vue + Node.js 前端项目。正在开发...
+`sct-app`: Vue + Node.js 前端项目。正在开发...
 
 ## 联系
 
