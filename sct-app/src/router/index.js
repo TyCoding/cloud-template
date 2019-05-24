@@ -82,19 +82,22 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/monitor/admin',
     name: '系统监控',
-    meta: { title: '系统监控', icon: 'monitor' },
+    meta: { title: '系统监控', icon: 'nested' },
     children: [
       {
-        path: 'admin',
+        path: 'http://localhost:3000/',
         name: '服务监控',
-        component: () => import('@/views/user/index'),
-        meta: { title: '用户管理', icon: 'table' }
+        meta: { title: '服务监控', icon: 'table' }
       },
       {
-        path: 'role',
-        name: '角色管理',
-        component: () => import('@/views/user/index'),
-        meta: { title: '角色管理', icon: 'table' }
+        path: 'http://localhost:3001/',
+        name: '链路监控',
+        meta: { title: '链路监控', icon: 'table' }
+      },
+      {
+        path: 'http://localhost:8761/',
+        name: '注册中心',
+        meta: { title: '注册中心', icon: 'table' }
       },
     ]
   },

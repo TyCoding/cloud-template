@@ -25,6 +25,12 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- Security安全 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+
         <!-- HikariCP连接池 -->
         <dependency>
             <groupId>com.zaxxer</groupId>

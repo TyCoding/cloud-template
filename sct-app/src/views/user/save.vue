@@ -1,85 +1,188 @@
 <template>
-  <div class="app-container">
-    <el-form ref="form" :model="form" label-width="120px">
-      <el-form-item label="Activity name">
-        <el-input v-model="form.name" />
+  <el-dialog :title="dialogTitle" :before-close="handleClose" :visible.sync="dialogVisible" width="40%">
+    <el-form ref="form" :rules="rules" :model="form" status-icon label-position="right" label-width="80px">
+      <el-form-item v-if="form.id != null" label="用户编号" prop="id" label-width="120px">
+        <el-input v-model="form.id" :disabled="true"></el-input>
       </el-form-item>
-      <el-form-item label="Activity zone">
-        <el-select v-model="form.region" placeholder="please select your zone">
-          <el-option label="Zone one" value="shanghai" />
-          <el-option label="Zone two" value="beijing" />
-        </el-select>
+      <el-form-item label="登录账户" prop="username" label-width="120px">
+        <el-input v-model="form.username" placeholder="请输入用户名"></el-input>
       </el-form-item>
-      <el-form-item label="Activity time">
-        <el-col :span="11">
-          <el-date-picker v-model="form.date1" type="date" placeholder="Pick a date" style="width: 100%;" />
-        </el-col>
-        <el-col :span="2" class="line">-</el-col>
-        <el-col :span="11">
-          <el-time-picker v-model="form.date2" type="fixed-time" placeholder="Pick a time" style="width: 100%;" />
-        </el-col>
+      <el-form-item label="登录密码" prop="password" label-width="120px">
+        <el-input v-model="form.password" placeholder="请输入密码"></el-input>
       </el-form-item>
-      <el-form-item label="Instant delivery">
-        <el-switch v-model="form.delivery" />
+      <el-form-item label="联系电话" prop="phone" label-width="120px">
+        <el-input v-model="form.phone" placeholder="请输入手机号"></el-input>
       </el-form-item>
-      <el-form-item label="Activity type">
-        <el-checkbox-group v-model="form.type">
-          <el-checkbox label="Online activities" name="type" />
-          <el-checkbox label="Promotion activities" name="type" />
-          <el-checkbox label="Offline activities" name="type" />
-          <el-checkbox label="Simple brand exposure" name="type" />
-        </el-checkbox-group>
+      <el-form-item label="创建时间" prop="createTime" label-width="120px">
+        <el-date-picker v-model="form.createTime" type="datetime" placeholder="选择日期时间" :disabled="true"
+                        value-format="yyyy-MM-dd HH:mm:ss" format="yyyy-MM-dd HH:mm:ss"></el-date-picker>
       </el-form-item>
-      <el-form-item label="Resources">
-        <el-radio-group v-model="form.resource">
-          <el-radio label="Sponsor" />
-          <el-radio label="Venue" />
-        </el-radio-group>
-      </el-form-item>
-      <el-form-item label="Activity form">
-        <el-input v-model="form.desc" type="textarea" />
-      </el-form-item>
-      <el-form-item>
-        <el-button type="primary" @click="onSubmit">Create</el-button>
-        <el-button @click="onCancel">Cancel</el-button>
+      <el-form-item label="个性头像" prop="avatar" label-width="120px">
+        <el-upload
+          class="avatar-uploader"
+          action=""
+          :show-file-list="false"
+          :on-success="handleAvatarSuccess"
+          :before-upload="beforeAvatarUpload">
+          <img v-if="form.avatar" :src="form.avatar" class="avatar">
+          <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+        </el-upload>
       </el-form-item>
     </el-form>
-  </div>
+    <div slot="footer" class="dialog-footer">
+      <el-button @click="handleClose">
+        Cancel
+      </el-button>
+      <el-button type="primary" @click="onSubmit('form')">
+        Confirm
+      </el-button>
+    </div>
+  </el-dialog>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      form: {
-        name: '',
-        region: '',
-        date1: '',
-        date2: '',
-        delivery: false,
-        type: [],
-        resource: '',
-        desc: ''
+  import { save, edit } from '@/api/user'
+  import { parseTime } from '@/utils/index'
+
+  export default {
+    //父组件向子组件传值，通过props获取。
+    //一旦父组件改变了`sonData`对应的值，子组件的`sonData`会立即改变，通过watch函数可以实时监听到值的变化
+    //`props`不属于data，但是`props`中的参数可以像data中的参数一样直接使用
+    props: ['sonData'],
+
+    data() {
+      return {
+        dialogVisible: false,
+        dialogTitle: 'Add',
+        form: {
+          id: '',
+          username: '',
+          password: '',
+          phone: '',
+          avatar: '',
+          createTime: ''
+        },
+        rules: {
+          username: [{required: true, trigger: 'blur', message: '请输入登录账户'}],
+          password: [{required: true, trigger: 'blur', message: '请输入登录密码'}],
+          phone: [{required: true, trigger: 'blur', message: '请输入联系电话'}],
+          createTime: [{required: true, trigger: 'blur', message: '请选择创建时间'}],
+          // avatar: [{required: true, trigger: 'blur', message: '请上传个性头像'}]
+        },
+      }
+    },
+    watch: {
+      'sonData': function (newVal, oldVal) {
+        this.form = newVal
+        this.dialogVisible = true
+        if (newVal.id != null) {
+          this.dialogTitle = 'Edit'
+        }
+      },
+    },
+    methods: {
+      _notify(message, type) {
+        this.$message({
+          message: message,
+          type: type
+        })
+      },
+      clearForm() {
+        this.form.id = null
+        this.form.username = null
+        this.form.password = null
+        this.form.phone = null
+        this.form.avatar = null
+        this.form.createTime = parseTime(new Date(), '')
+        this.form.salt = null
+      },
+      handleClose() {
+        this.clearForm();
+        this.dialogVisible = false
+      },
+      onSubmit(form) {
+        this.$refs[form].validate((valid) => {
+          if (valid) {
+            if (this.form.id === null) {
+              save(this.form).then(response => {
+                if (response.code === 200) {
+                  this._notify(response.msg, 'success')
+                  this.clearForm()
+                  this.$emit('sonStatus', true)
+                  this.dialogVisible = false
+                } else {
+                  this._notify(response.msg, 'error')
+                }
+              })
+            } else {
+              edit(this.form).then(response => {
+                if (response.code === 200) {
+                  this._notify(response.msg, 'success')
+                  this.clearForm()
+                  this.$emit('sonStatus', true)
+                  this.dialogVisible = false
+                } else {
+                  this._notify(response.msg, 'error')
+                }
+              })
+            }
+          } else {
+            this.$message('error submit!!')
+            return false;
+          }
+        });
+      },
+
+      handleAvatarSuccess(res, file) {
+        this.imageUrl = URL.createObjectURL(file.raw);
+      },
+      beforeAvatarUpload(file) {
+        const isJPG = file.type === 'image/jpeg';
+        const isLt2M = file.size / 1024 / 1024 < 2;
+
+        if (!isJPG) {
+          this.$message.error('上传头像图片只能是 JPG 格式!');
+        }
+        if (!isLt2M) {
+          this.$message.error('上传头像图片大小不能超过 2MB!');
+        }
+        return isJPG && isLt2M;
       }
     }
-  },
-  methods: {
-    onSubmit() {
-      this.$message('submit!')
-    },
-    onCancel() {
-      this.$message({
-        message: 'cancel!',
-        type: 'warning'
-      })
-    }
   }
-}
 </script>
 
-<style scoped>
-.line{
-  text-align: center;
-}
+<style lang="css">
+  .line {
+    text-align: center;
+  }
+
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
 </style>
+
 

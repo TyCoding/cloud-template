@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 /**
  * 身份校验 auth
@@ -11,6 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author tycoding
  * @date 2019-05-21
  */
+@EnableResourceServer
 @EnableFeignClients("cn.tycoding.api.admin.feign")
 @EnableDiscoveryClient
 @SpringBootApplication

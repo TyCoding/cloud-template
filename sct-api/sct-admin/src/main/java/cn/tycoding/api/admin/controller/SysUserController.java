@@ -25,6 +25,16 @@ public class SysUserController extends BaseController {
     private SysUserService sysUserService;
 
     /**
+     * 获取当前用户信息
+     *
+     * @return
+     */
+    @GetMapping("/info")
+    public Result<SysUser> info() {
+        return new Result<>();
+    }
+
+    /**
      * 根据用户名查询用户信息
      *
      * @param username
