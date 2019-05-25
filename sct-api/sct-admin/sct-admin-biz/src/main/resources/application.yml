@@ -1,0 +1,30 @@
+server:
+  port: 4100
+
+spring:
+  application:
+    name: sct-admin-biz
+
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: secret
+      access-token-uri: http://localhost:4000/oauth/token
+      user-authorization-uri: http://localhost:4000/oauth/authorize
+    resource:
+      token-info-uri: http://localhost:4000/oauth/check_token
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://sct-eureka:8761/eureka/

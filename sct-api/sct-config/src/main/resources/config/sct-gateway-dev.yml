@@ -5,5 +5,5 @@ zuul:
       serviceId: sct-auth
     sct-admin:
       path: /api/admin/**
-      serviceId: sct-admin
+      serviceId: sct-admin-biz
 

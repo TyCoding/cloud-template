@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
  * @date 2019-05-21
  */
 @EnableResourceServer
-@EnableFeignClients("cn.tycoding.api.admin.feign")
+@EnableFeignClients("cn.tycoding.api.admin.api.feign")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class AuthApplication {

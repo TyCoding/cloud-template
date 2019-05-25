@@ -4,12 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.tycoding</groupId>
-        <artifactId>sct-api</artifactId>
+        <artifactId>sct-admin</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>sct-auth</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>sct-auth</name>
+
+    <artifactId>sct-admin-biz</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -50,14 +49,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Mybatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${spring-boot-mybatis.version}</version>
-        </dependency>
-
-        <!-- Web -->
+        <!-- Web依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -75,7 +67,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.tycoding.api.auth.AuthApplication</mainClass>
+                    <mainClass>cn.tycoding.api.admin.biz.AdminBizApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
