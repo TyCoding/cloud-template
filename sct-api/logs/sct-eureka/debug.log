@@ -933,3 +933,690 @@ java.lang.IllegalStateException: Shutdown in progress
 2019-05-27 14:28:09,126 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
 2019-05-27 14:29:09,129 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
 2019-05-27 14:30:09,133 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:31:09,140 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 6ms
+2019-05-27 14:32:09,143 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:33:09,149 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:34:09,159 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 14:35:09,163 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:36:09,164 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 14:37:09,168 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:38:08,211 [http-nio-8761-exec-7] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 14:38:08,271 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 14:38:09,174 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 14:38:12,084 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-AUTH/169.254.91.37:sct-auth:4000 (replication=false)
+2019-05-27 14:38:12,613 [http-nio-8761-exec-1] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:315 - DS: Registry: cancel failed because Lease is not registered for: SCT-AUTH/169.254.91.37:sct-auth:4000
+2019-05-27 14:38:12,615 [http-nio-8761-exec-1] INFO  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:288 - Not Found (Cancel): SCT-AUTH - 169.254.91.37:sct-auth:4000
+2019-05-27 14:38:12,617 [TaskBatchingWorker-target_sct-eureka-14] WARN  [com.netflix.eureka.cluster.ReplicationTask] ReplicationTask.java:35 - The replication of task SCT-AUTH/169.254.91.37:sct-auth:4000:Cancel@sct-eureka failed with response code 404
+2019-05-27 14:38:12,619 [TaskBatchingWorker-target_sct-eureka-14] WARN  [com.netflix.eureka.cluster.PeerEurekaNode] PeerEurekaNode.java:171 - SCT-AUTH/169.254.91.37:sct-auth:4000:Cancel@sct-eureka: missing entry.
+2019-05-27 14:39:09,177 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:40:03,114 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status UP (replication=false)
+2019-05-27 14:40:03,629 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status UP (replication=true)
+2019-05-27 14:40:09,181 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:41:09,185 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:42:09,188 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 14:42:46,703 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 14:42:47,231 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 14:42:49,854 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-AUTH/169.254.91.37:sct-auth:4000 (replication=false)
+2019-05-27 14:42:50,369 [http-nio-8761-exec-7] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:315 - DS: Registry: cancel failed because Lease is not registered for: SCT-AUTH/169.254.91.37:sct-auth:4000
+2019-05-27 14:42:50,370 [http-nio-8761-exec-7] INFO  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:288 - Not Found (Cancel): SCT-AUTH - 169.254.91.37:sct-auth:4000
+2019-05-27 14:42:50,377 [TaskBatchingWorker-target_sct-eureka-13] WARN  [com.netflix.eureka.cluster.ReplicationTask] ReplicationTask.java:35 - The replication of task SCT-AUTH/169.254.91.37:sct-auth:4000:Cancel@sct-eureka failed with response code 404
+2019-05-27 14:42:50,380 [TaskBatchingWorker-target_sct-eureka-13] WARN  [com.netflix.eureka.cluster.PeerEurekaNode] PeerEurekaNode.java:171 - SCT-AUTH/169.254.91.37:sct-auth:4000:Cancel@sct-eureka: missing entry.
+2019-05-27 14:43:08,653 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 10
+2019-05-27 14:43:09,189 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 14:43:13,457 [http-nio-8761-exec-5] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status UP (replication=false)
+2019-05-27 14:43:13,982 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status UP (replication=true)
+2019-05-27 14:44:09,194 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 14:58:16,002 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 14:59:16,877 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:00:16,882 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:01:16,886 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:02:16,889 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 15:03:16,894 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:04:16,897 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 15:05:16,900 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 15:06:16,902 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 15:06:54,113 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] SpringApplication.java:675 - No active profile set, falling back to default profiles: default
+2019-05-27 15:06:54,986 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:135 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 15:06:55,307 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=a9953f4c-4dd8-33f8-b039-a98dafbae4b8
+2019-05-27 15:06:55,613 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1e7d5e6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 15:06:56,188 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 8761 (http)
+2019-05-27 15:06:56,200 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:06:56,209 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2019-05-27 15:06:56,209 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 15:06:56,330 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2019-05-27 15:06:56,331 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 2147 ms
+2019-05-27 15:06:56,562 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 15:06:56,563 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 15:06:56,571 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@92d1782
+2019-05-27 15:06:57,810 [main] INFO  [c.s.j.server.impl.application.WebApplicationImpl] WebApplicationImpl.java:815 - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-05-27 15:06:57,987 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 15:06:57,989 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 15:06:58,121 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 15:06:58,122 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 15:06:58,469 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 15:06:58,469 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 15:06:58,866 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 15:06:59,531 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
+2019-05-27 15:06:59,557 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2019-05-27 15:06:59,557 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:352 - Client configured to neither register nor query for data.
+2019-05-27 15:06:59,562 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Discovery Client initialized at timestamp 1558940819561 with initial instances count: 0
+2019-05-27 15:06:59,613 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:63 - Initializing ...
+2019-05-27 15:06:59,615 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:188 - Adding new peer nodes [http://sct-eureka:8761/eureka/]
+2019-05-27 15:06:59,822 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 15:06:59,822 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 15:06:59,823 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 15:06:59,823 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 15:06:59,943 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:110 - Replica node URL:  http://sct-eureka:8761/eureka/
+2019-05-27 15:06:59,957 [main] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:151 - Finished initializing remote region registries. All known remote regions: []
+2019-05-27 15:06:59,959 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:70 - Initialized
+2019-05-27 15:07:00,161 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-27 15:07:00,316 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application SCT-EUREKA with eureka with status UP
+2019-05-27 15:07:00,320 [Thread-26] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:110 - Setting the eureka configuration..
+2019-05-27 15:07:00,320 [Thread-26] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:115 - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-05-27 15:07:00,321 [Thread-26] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:129 - Eureka environment value eureka.environment is not set, defaulting to test
+2019-05-27 15:07:00,345 [Thread-26] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:188 - isAws returned false
+2019-05-27 15:07:00,346 [Thread-26] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:153 - Initialized server context
+2019-05-27 15:07:00,346 [Thread-26] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:241 - Got 1 instances from neighboring DS node
+2019-05-27 15:07:00,346 [Thread-26] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:242 - Renew threshold is: 1
+2019-05-27 15:07:00,347 [Thread-26] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:253 - Changing status to UP
+2019-05-27 15:07:00,357 [Thread-26] INFO  [o.s.c.n.e.s.EurekaServerInitializerConfiguration] EurekaServerInitializerConfiguration.java:74 - Started Eureka Server
+2019-05-27 15:07:00,361 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:07:00,420 [main] ERROR [org.apache.catalina.util.LifecycleBase] DirectJDKLog.java:175 - Failed to start component [Connector[HTTP/1.1-8761]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at cn.tycoding.api.eureka.EurekaApplication.main(EurekaApplication.java:18)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-05-27 15:07:00,461 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Pausing ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:07:00,462 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Stopping service [Tomcat]
+2019-05-27 15:07:00,488 [main] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] DirectJDKLog.java:173 - The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@314a31b0}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:257)
+ zipkin2.reporter.AsyncReporter$Builder$1.run(AsyncReporter.java:190)
+2019-05-27 15:07:00,490 [main] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] DirectJDKLog.java:173 - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-05-27 15:07:00,496 [main] INFO  [org.apache.catalina.util.LifecycleBase] DirectJDKLog.java:173 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-05-27 15:07:00,498 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Stopping ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:07:00,501 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Destroying ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:07:00,507 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-05-27 15:07:00,509 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-EUREKA with eureka with status DOWN
+2019-05-27 15:07:00,514 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:76 - Shutting down ...
+2019-05-27 15:07:00,519 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:79 - Shut down
+2019-05-27 15:07:00,522 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-27 15:07:00,880 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@314a31b0}] WARN  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eurekaRibbonClientConfiguration': Unsatisfied dependency expressed through field 'eurekaConfig'; nested exception is org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-05-27 15:07:00,883 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-05-27 15:07:00,884 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2019-05-27 15:07:00,898 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8761 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8761, or configure this application to listen on another port.
+
+2019-05-27 15:07:16,909 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 15:08:02,066 [Thread-43] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2019-05-27 15:08:02,098 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/169.254.91.37:sct-gateway:9999 with status DOWN (replication=false)
+2019-05-27 15:08:02,095 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/169.254.91.37:sct-monitor:3000 with status DOWN (replication=false)
+2019-05-27 15:08:02,133 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.91.37:sct-zipkin:3001 with status DOWN (replication=false)
+2019-05-27 15:08:02,148 [http-nio-8761-exec-5] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.91.37:sct-config:8888 with status DOWN (replication=false)
+2019-05-27 15:08:02,151 [Thread-31] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-EUREKA with eureka with status DOWN
+2019-05-27 15:08:02,168 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/169.254.91.37:sct-admin-biz:4100 with status DOWN (replication=false)
+2019-05-27 15:08:02,207 [http-nio-8761-exec-7] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.91.37:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 15:08:02,215 [Thread-31] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:76 - Shutting down ...
+2019-05-27 15:08:02,241 [Thread-31] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:79 - Shut down
+2019-05-27 15:08:02,261 [Thread-31] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-27 15:08:03,311 [Thread-31] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 15:08:03,329 [Thread-31] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-05-27 15:08:03,349 [Thread-31] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-05-27 15:08:03,350 [Thread-31] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2019-05-27 15:10:29,318 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] SpringApplication.java:675 - No active profile set, falling back to default profiles: default
+2019-05-27 15:10:30,319 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:135 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 15:10:30,688 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=a9953f4c-4dd8-33f8-b039-a98dafbae4b8
+2019-05-27 15:10:31,090 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ed02800e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 15:10:31,622 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 8761 (http)
+2019-05-27 15:10:31,640 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:10:31,651 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2019-05-27 15:10:31,651 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 15:10:31,789 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2019-05-27 15:10:31,790 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 2456 ms
+2019-05-27 15:10:32,023 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 15:10:32,024 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 15:10:32,039 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22c53d82
+2019-05-27 15:10:33,407 [main] INFO  [c.s.j.server.impl.application.WebApplicationImpl] WebApplicationImpl.java:815 - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-05-27 15:10:33,493 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 15:10:33,495 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 15:10:33,685 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 15:10:33,686 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 15:10:34,153 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 15:10:34,155 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 15:10:34,573 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 15:10:35,425 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
+2019-05-27 15:10:35,475 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2019-05-27 15:10:35,476 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:352 - Client configured to neither register nor query for data.
+2019-05-27 15:10:35,488 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Discovery Client initialized at timestamp 1558941035486 with initial instances count: 0
+2019-05-27 15:10:35,551 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:63 - Initializing ...
+2019-05-27 15:10:35,553 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:188 - Adding new peer nodes [http://sct-eureka:8761/eureka/]
+2019-05-27 15:10:35,877 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 15:10:35,877 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 15:10:35,878 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 15:10:35,878 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 15:10:36,039 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:110 - Replica node URL:  http://sct-eureka:8761/eureka/
+2019-05-27 15:10:36,050 [main] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:151 - Finished initializing remote region registries. All known remote regions: []
+2019-05-27 15:10:36,051 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:70 - Initialized
+2019-05-27 15:10:36,173 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-27 15:10:36,307 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application SCT-EUREKA with eureka with status UP
+2019-05-27 15:10:36,313 [Thread-28] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:110 - Setting the eureka configuration..
+2019-05-27 15:10:36,314 [Thread-28] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:115 - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-05-27 15:10:36,315 [Thread-28] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:129 - Eureka environment value eureka.environment is not set, defaulting to test
+2019-05-27 15:10:36,335 [Thread-28] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:188 - isAws returned false
+2019-05-27 15:10:36,336 [Thread-28] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:153 - Initialized server context
+2019-05-27 15:10:36,336 [Thread-28] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:241 - Got 1 instances from neighboring DS node
+2019-05-27 15:10:36,336 [Thread-28] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:242 - Renew threshold is: 1
+2019-05-27 15:10:36,336 [Thread-28] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:253 - Changing status to UP
+2019-05-27 15:10:36,347 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8761"]
+2019-05-27 15:10:36,348 [Thread-28] INFO  [o.s.c.n.e.s.EurekaServerInitializerConfiguration] EurekaServerInitializerConfiguration.java:74 - Started Eureka Server
+2019-05-27 15:10:36,398 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:204 - Tomcat started on port(s): 8761 (http) with context path ''
+2019-05-27 15:10:36,399 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:143 - Updating port to 8761
+2019-05-27 15:10:36,406 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] StartupInfoLogger.java:59 - Started EurekaApplication in 9.012 seconds (JVM running for 10.462)
+2019-05-27 15:10:36,704 [RMI TCP Connection(1)-127.0.0.1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 15:10:36,704 [RMI TCP Connection(1)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-27 15:10:36,730 [RMI TCP Connection(1)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:546 - Completed initialization in 25 ms
+2019-05-27 15:11:36,340 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:12:36,344 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:13:26,353 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status UP (replication=false)
+2019-05-27 15:13:26,961 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status UP (replication=true)
+2019-05-27 15:13:36,349 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 15:14:18,109 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/172.18.57.104:sct-monitor:3000 with status UP (replication=false)
+2019-05-27 15:14:18,627 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/172.18.57.104:sct-monitor:3000 with status UP (replication=true)
+2019-05-27 15:14:36,352 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:15:16,161 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=false)
+2019-05-27 15:15:16,669 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=true)
+2019-05-27 15:15:19,488 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@6d229b1c}] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 15:15:19,498 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@6d229b1c}] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 15:15:19,499 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@6d229b1c}] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 15:15:19,504 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@6d229b1c}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
+2019-05-27 15:15:19,508 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@6d229b1c}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4debc466
+2019-05-27 15:15:36,357 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:16:36,358 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:17:36,362 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:18:36,363 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:19:36,367 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:20:36,371 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:21:36,371 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:22:36,373 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 15:23:36,376 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:23:55,930 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 15:23:56,436 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 15:23:59,573 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-AUTH/172.18.57.104:sct-auth:4000 (replication=false)
+2019-05-27 15:24:00,088 [http-nio-8761-exec-7] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:315 - DS: Registry: cancel failed because Lease is not registered for: SCT-AUTH/172.18.57.104:sct-auth:4000
+2019-05-27 15:24:00,088 [http-nio-8761-exec-7] INFO  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:288 - Not Found (Cancel): SCT-AUTH - 172.18.57.104:sct-auth:4000
+2019-05-27 15:24:00,090 [TaskBatchingWorker-target_sct-eureka-16] WARN  [com.netflix.eureka.cluster.ReplicationTask] ReplicationTask.java:35 - The replication of task SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka failed with response code 404
+2019-05-27 15:24:00,091 [TaskBatchingWorker-target_sct-eureka-16] WARN  [com.netflix.eureka.cluster.PeerEurekaNode] PeerEurekaNode.java:171 - SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka: missing entry.
+2019-05-27 15:24:17,451 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=false)
+2019-05-27 15:24:17,964 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=true)
+2019-05-27 15:24:36,377 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 41ms
+2019-05-27 15:25:36,053 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 6
+2019-05-27 15:25:36,377 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:26:36,382 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:27:36,384 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 15:28:36,387 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:29:36,391 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:30:36,391 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:31:11,022 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/172.18.57.104:sct-gateway:9999 with status UP (replication=false)
+2019-05-27 15:31:11,541 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/172.18.57.104:sct-gateway:9999 with status UP (replication=true)
+2019-05-27 15:31:36,393 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 15:31:52,088 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/172.18.57.104:sct-admin-biz:4100 with status UP (replication=false)
+2019-05-27 15:31:52,605 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/172.18.57.104:sct-admin-biz:4100 with status UP (replication=true)
+2019-05-27 15:32:36,396 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:33:36,402 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 15:34:36,404 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 15:35:36,407 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 15:36:36,407 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 15:37:36,412 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 15:38:04,803 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 15:38:05,324 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 15:38:08,280 [http-nio-8761-exec-5] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-AUTH/172.18.57.104:sct-auth:4000 (replication=false)
+2019-05-27 15:38:08,785 [http-nio-8761-exec-4] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:315 - DS: Registry: cancel failed because Lease is not registered for: SCT-AUTH/172.18.57.104:sct-auth:4000
+2019-05-27 15:38:08,786 [http-nio-8761-exec-4] INFO  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:288 - Not Found (Cancel): SCT-AUTH - 172.18.57.104:sct-auth:4000
+2019-05-27 15:38:08,787 [TaskBatchingWorker-target_sct-eureka-10] WARN  [com.netflix.eureka.cluster.ReplicationTask] ReplicationTask.java:35 - The replication of task SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka failed with response code 404
+2019-05-27 15:38:08,788 [TaskBatchingWorker-target_sct-eureka-10] WARN  [com.netflix.eureka.cluster.PeerEurekaNode] PeerEurekaNode.java:171 - SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka: missing entry.
+2019-05-27 15:38:25,492 [http-nio-8761-exec-7] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=false)
+2019-05-27 15:38:26,011 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status UP (replication=true)
+2019-05-27 15:38:36,416 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 19:49:25,729 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 19:49:25,737 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:611 - Evicting 1 items (expired=5, evictionLimit=1)
+2019-05-27 19:49:25,739 [Eureka-EvictionTimer] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:623 - DS: Registry: expired lease for SCT-CONFIG/localhost:sct-config:8888
+2019-05-27 19:49:25,741 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-CONFIG/localhost:sct-config:8888 (replication=false)
+2019-05-27 19:49:46,034 [http-nio-8761-exec-2] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:353 - DS: Registry: lease doesn't exist, registering resource: SCT-CONFIG - localhost:sct-config:8888
+2019-05-27 19:49:46,042 [http-nio-8761-exec-2] WARN  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:116 - Not Found (Renew): SCT-CONFIG - localhost:sct-config:8888
+2019-05-27 19:49:46,059 [http-nio-8761-exec-5] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status UP (replication=false)
+2019-05-27 19:49:46,576 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status UP (replication=true)
+2019-05-27 19:50:25,374 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 11
+2019-05-27 19:50:25,744 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 19:51:25,750 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 19:52:25,753 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 19:53:13,540 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 19:53:14,061 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/172.18.57.104:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 19:53:16,704 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:330 - Cancelled instance SCT-AUTH/172.18.57.104:sct-auth:4000 (replication=false)
+2019-05-27 19:53:17,232 [http-nio-8761-exec-8] WARN  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:315 - DS: Registry: cancel failed because Lease is not registered for: SCT-AUTH/172.18.57.104:sct-auth:4000
+2019-05-27 19:53:17,238 [http-nio-8761-exec-8] INFO  [com.netflix.eureka.resources.InstanceResource] InstanceResource.java:288 - Not Found (Cancel): SCT-AUTH - 172.18.57.104:sct-auth:4000
+2019-05-27 19:53:17,243 [TaskBatchingWorker-target_sct-eureka-0] WARN  [com.netflix.eureka.cluster.ReplicationTask] ReplicationTask.java:35 - The replication of task SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka failed with response code 404
+2019-05-27 19:53:17,245 [TaskBatchingWorker-target_sct-eureka-0] WARN  [com.netflix.eureka.cluster.PeerEurekaNode] PeerEurekaNode.java:171 - SCT-AUTH/172.18.57.104:sct-auth:4000:Cancel@sct-eureka: missing entry.
+2019-05-27 19:53:25,757 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 19:54:25,759 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 19:55:25,764 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 19:55:52,461 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status UP (replication=false)
+2019-05-27 19:55:52,975 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status UP (replication=true)
+2019-05-27 19:56:25,767 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 19:57:17,782 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status UP (replication=false)
+2019-05-27 19:57:18,303 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status UP (replication=true)
+2019-05-27 19:57:25,767 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 19:58:25,770 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 19:59:25,780 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 20:00:25,780 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 20:00:29,259 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 20:00:29,460 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status DOWN (replication=false)
+2019-05-27 20:00:29,579 [Thread-42] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2019-05-27 20:00:29,715 [Thread-30] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-EUREKA with eureka with status DOWN
+2019-05-27 20:00:29,774 [http-nio-8761-exec-5] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/172.18.57.104:sct-gateway:9999 with status DOWN (replication=false)
+2019-05-27 20:00:29,783 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status DOWN (replication=true)
+2019-05-27 20:00:29,784 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/localhost:sct-config:8888 with status DOWN (replication=true)
+2019-05-27 20:00:29,785 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/172.18.57.104:sct-gateway:9999 with status DOWN (replication=true)
+2019-05-27 20:00:29,969 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/172.18.57.104:sct-monitor:3000 with status DOWN (replication=false)
+2019-05-27 20:00:30,035 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status DOWN (replication=false)
+2019-05-27 20:00:30,110 [Thread-30] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:76 - Shutting down ...
+2019-05-27 20:00:30,163 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/172.18.57.104:sct-admin-biz:4100 with status DOWN (replication=false)
+2019-05-27 20:00:30,324 [Thread-30] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:79 - Shut down
+2019-05-27 20:00:30,356 [Thread-30] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-27 20:00:30,707 [Thread-30] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 20:00:30,757 [Thread-30] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-05-27 20:00:30,796 [Thread-30] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-05-27 20:00:30,799 [Thread-30] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2019-05-27 20:01:18,066 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] SpringApplication.java:675 - No active profile set, falling back to default profiles: default
+2019-05-27 20:01:21,793 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:135 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 20:01:23,327 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=a9953f4c-4dd8-33f8-b039-a98dafbae4b8
+2019-05-27 20:01:24,147 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4e824d73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 20:01:25,230 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 8761 (http)
+2019-05-27 20:01:25,256 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8761"]
+2019-05-27 20:01:25,280 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2019-05-27 20:01:25,281 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 20:01:25,522 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2019-05-27 20:01:25,525 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 7398 ms
+2019-05-27 20:01:25,879 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 20:01:25,880 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 20:01:25,914 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@430b2699
+2019-05-27 20:01:29,586 [main] INFO  [c.s.j.server.impl.application.WebApplicationImpl] WebApplicationImpl.java:815 - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-05-27 20:01:29,732 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 20:01:29,740 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 20:01:29,975 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 20:01:29,976 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 20:01:30,620 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 20:01:30,621 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 20:01:32,086 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 20:01:34,666 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
+2019-05-27 20:01:34,776 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2019-05-27 20:01:34,777 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:352 - Client configured to neither register nor query for data.
+2019-05-27 20:01:34,803 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Discovery Client initialized at timestamp 1558958494797 with initial instances count: 0
+2019-05-27 20:01:35,040 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:63 - Initializing ...
+2019-05-27 20:01:35,044 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:188 - Adding new peer nodes [http://sct-eureka:8761/eureka/]
+2019-05-27 20:01:35,610 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 20:01:35,610 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 20:01:35,611 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 20:01:35,623 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 20:01:35,929 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:110 - Replica node URL:  http://sct-eureka:8761/eureka/
+2019-05-27 20:01:35,957 [main] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:151 - Finished initializing remote region registries. All known remote regions: []
+2019-05-27 20:01:35,958 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:70 - Initialized
+2019-05-27 20:01:36,094 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-27 20:01:36,408 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application SCT-EUREKA with eureka with status UP
+2019-05-27 20:01:36,411 [Thread-61] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:110 - Setting the eureka configuration..
+2019-05-27 20:01:36,413 [Thread-61] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:115 - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-05-27 20:01:36,415 [Thread-61] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:129 - Eureka environment value eureka.environment is not set, defaulting to test
+2019-05-27 20:01:36,444 [Thread-61] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:188 - isAws returned false
+2019-05-27 20:01:36,445 [Thread-61] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:153 - Initialized server context
+2019-05-27 20:01:36,446 [Thread-61] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:241 - Got 1 instances from neighboring DS node
+2019-05-27 20:01:36,446 [Thread-61] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:242 - Renew threshold is: 1
+2019-05-27 20:01:36,447 [Thread-61] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:253 - Changing status to UP
+2019-05-27 20:01:36,468 [Thread-61] INFO  [o.s.c.n.e.s.EurekaServerInitializerConfiguration] EurekaServerInitializerConfiguration.java:74 - Started Eureka Server
+2019-05-27 20:01:36,504 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8761"]
+2019-05-27 20:01:36,586 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:204 - Tomcat started on port(s): 8761 (http) with context path ''
+2019-05-27 20:01:36,592 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:143 - Updating port to 8761
+2019-05-27 20:01:36,599 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] StartupInfoLogger.java:59 - Started EurekaApplication in 25.064 seconds (JVM running for 28.817)
+2019-05-27 20:01:37,056 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 20:01:37,056 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-27 20:01:37,132 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:546 - Completed initialization in 75 ms
+2019-05-27 20:02:22,019 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status UP (replication=false)
+2019-05-27 20:02:23,190 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status UP (replication=true)
+2019-05-27 20:02:36,456 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 20:03:36,460 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:04:36,465 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:05:25,535 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@3290b1a6}] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 20:05:25,571 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@3290b1a6}] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 20:05:25,572 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@3290b1a6}] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 20:05:25,601 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@3290b1a6}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
+2019-05-27 20:05:25,620 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@3290b1a6}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@76731b95
+2019-05-27 20:05:37,527 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:06:37,531 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 20:07:37,532 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 20:08:37,535 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 20:09:37,539 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 20:10:37,541 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 20:11:37,547 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:12:37,553 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 20:13:37,557 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 20:14:37,560 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 20:15:37,565 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 20:16:37,029 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 3
+2019-05-27 20:16:37,567 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 20:17:37,572 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:18:37,575 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 20:19:37,581 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 20:20:37,582 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 20:21:37,589 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 20:22:37,590 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 20:23:25,704 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status DOWN (replication=false)
+2019-05-27 20:23:25,734 [Thread-76] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2019-05-27 20:23:25,740 [Thread-64] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-EUREKA with eureka with status DOWN
+2019-05-27 20:23:25,778 [Thread-64] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:76 - Shutting down ...
+2019-05-27 20:23:25,796 [Thread-64] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:79 - Shut down
+2019-05-27 20:23:25,807 [Thread-64] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-27 20:23:25,957 [Thread-64] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 20:23:25,974 [Thread-64] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-05-27 20:23:26,007 [Thread-64] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-05-27 20:23:26,007 [Thread-64] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2019-05-27 21:14:49,961 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] SpringApplication.java:675 - No active profile set, falling back to default profiles: default
+2019-05-27 21:14:54,284 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:135 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-27 21:14:55,207 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=a9953f4c-4dd8-33f8-b039-a98dafbae4b8
+2019-05-27 21:14:56,031 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$186ac539] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-27 21:14:57,639 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 8761 (http)
+2019-05-27 21:14:57,702 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8761"]
+2019-05-27 21:14:57,752 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2019-05-27 21:14:57,762 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-27 21:14:58,642 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2019-05-27 21:14:58,643 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 8641 ms
+2019-05-27 21:14:59,482 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 21:14:59,483 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 21:14:59,516 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@28a9494b
+2019-05-27 21:15:05,369 [main] INFO  [c.s.j.server.impl.application.WebApplicationImpl] WebApplicationImpl.java:815 - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-05-27 21:15:05,821 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 21:15:05,829 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 21:15:06,125 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 21:15:06,128 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 21:15:07,360 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-05-27 21:15:07,362 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-05-27 21:15:08,118 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 21:15:10,412 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
+2019-05-27 21:15:10,510 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2019-05-27 21:15:10,510 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:352 - Client configured to neither register nor query for data.
+2019-05-27 21:15:10,526 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Discovery Client initialized at timestamp 1558962910525 with initial instances count: 0
+2019-05-27 21:15:10,647 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:63 - Initializing ...
+2019-05-27 21:15:10,651 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:188 - Adding new peer nodes [http://sct-eureka:8761/eureka/]
+2019-05-27 21:15:11,095 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-05-27 21:15:11,096 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-05-27 21:15:11,097 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-05-27 21:15:11,097 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-05-27 21:15:11,552 [main] INFO  [com.netflix.eureka.cluster.PeerEurekaNodes] PeerEurekaNodes.java:110 - Replica node URL:  http://sct-eureka:8761/eureka/
+2019-05-27 21:15:11,578 [main] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:151 - Finished initializing remote region registries. All known remote regions: []
+2019-05-27 21:15:11,580 [main] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:70 - Initialized
+2019-05-27 21:15:11,871 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:59 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-05-27 21:15:12,290 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application SCT-EUREKA with eureka with status UP
+2019-05-27 21:15:12,298 [Thread-67] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:110 - Setting the eureka configuration..
+2019-05-27 21:15:12,300 [Thread-67] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:115 - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-05-27 21:15:12,301 [Thread-67] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:129 - Eureka environment value eureka.environment is not set, defaulting to test
+2019-05-27 21:15:12,336 [Thread-67] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:188 - isAws returned false
+2019-05-27 21:15:12,337 [Thread-67] INFO  [o.s.c.netflix.eureka.server.EurekaServerBootstrap] EurekaServerBootstrap.java:153 - Initialized server context
+2019-05-27 21:15:12,337 [Thread-67] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:241 - Got 1 instances from neighboring DS node
+2019-05-27 21:15:12,338 [Thread-67] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:242 - Renew threshold is: 1
+2019-05-27 21:15:12,338 [Thread-67] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:253 - Changing status to UP
+2019-05-27 21:15:12,362 [Thread-67] INFO  [o.s.c.n.e.s.EurekaServerInitializerConfiguration] EurekaServerInitializerConfiguration.java:74 - Started Eureka Server
+2019-05-27 21:15:12,412 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8761"]
+2019-05-27 21:15:12,525 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:204 - Tomcat started on port(s): 8761 (http) with context path ''
+2019-05-27 21:15:12,526 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:143 - Updating port to 8761
+2019-05-27 21:15:12,534 [main] INFO  [cn.tycoding.api.eureka.EurekaApplication] StartupInfoLogger.java:59 - Started EurekaApplication in 28.28 seconds (JVM running for 30.658)
+2019-05-27 21:15:12,679 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 21:15:12,679 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-27 21:15:12,726 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:546 - Completed initialization in 46 ms
+2019-05-27 21:15:46,213 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status UP (replication=false)
+2019-05-27 21:15:47,456 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status UP (replication=true)
+2019-05-27 21:16:12,344 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 21:16:49,865 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/169.254.105.5:sct-monitor:3000 with status UP (replication=false)
+2019-05-27 21:16:50,379 [http-nio-8761-exec-2] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/169.254.105.5:sct-monitor:3000 with status UP (replication=true)
+2019-05-27 21:17:12,346 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 21:18:12,348 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:18:51,314 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41ef1ea2}] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-05-27 21:18:51,328 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41ef1ea2}] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 21:18:51,329 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41ef1ea2}] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-05-27 21:18:51,335 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41ef1ea2}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
+2019-05-27 21:18:51,339 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41ef1ea2}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3558439e
+2019-05-27 21:19:12,352 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:20:12,356 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:21:12,356 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 5ms
+2019-05-27 21:22:12,361 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:23:12,366 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:24:07,859 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status UP (replication=false)
+2019-05-27 21:24:08,386 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status UP (replication=true)
+2019-05-27 21:24:12,371 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:24:59,945 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/169.254.105.5:sct-admin-biz:4100 with status UP (replication=false)
+2019-05-27 21:25:00,467 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/169.254.105.5:sct-admin-biz:4100 with status UP (replication=true)
+2019-05-27 21:25:12,376 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:25:28,417 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status UP (replication=false)
+2019-05-27 21:25:28,944 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status UP (replication=true)
+2019-05-27 21:25:42,116 [http-nio-8761-exec-9] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/169.254.105.5:sct-gateway:9999 with status UP (replication=false)
+2019-05-27 21:25:42,644 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/169.254.105.5:sct-gateway:9999 with status UP (replication=true)
+2019-05-27 21:26:12,380 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:27:12,385 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:28:12,391 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:29:12,393 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:30:11,600 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 11
+2019-05-27 21:30:12,398 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:31:12,400 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:32:12,406 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:33:12,409 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:34:12,413 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:35:12,417 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:36:12,420 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 36ms
+2019-05-27 21:37:12,420 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:38:12,424 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:39:12,425 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:40:12,429 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:41:12,435 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:42:12,437 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:43:12,441 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:44:12,445 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:45:11,601 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  [c.n.eureka.registry.PeerAwareInstanceRegistryImpl] PeerAwareInstanceRegistryImpl.java:539 - Current renewal threshold is : 11
+2019-05-27 21:45:12,450 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:46:12,455 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:47:12,465 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 9ms
+2019-05-27 21:48:12,469 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:49:12,471 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:50:12,476 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:51:12,479 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 2ms
+2019-05-27 21:52:12,481 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 1ms
+2019-05-27 21:53:12,487 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:54:12,488 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 0ms
+2019-05-27 21:55:12,493 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:56:12,497 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:57:12,501 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 4ms
+2019-05-27 21:58:12,505 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:59:12,509 [Eureka-EvictionTimer] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:1250 - Running the evict task with compensationTime 3ms
+2019-05-27 21:59:26,691 [http-nio-8761-exec-4] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-AUTH/169.254.105.5:sct-auth:4000 with status DOWN (replication=false)
+2019-05-27 21:59:26,731 [http-nio-8761-exec-6] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-CONFIG/169.254.105.5:sct-config:8888 with status DOWN (replication=false)
+2019-05-27 21:59:26,767 [Thread-81] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2019-05-27 21:59:26,798 [Thread-69] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-EUREKA with eureka with status DOWN
+2019-05-27 21:59:26,893 [http-nio-8761-exec-3] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-GATEWAY/169.254.105.5:sct-gateway:9999 with status DOWN (replication=false)
+2019-05-27 21:59:26,905 [Thread-69] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:76 - Shutting down ...
+2019-05-27 21:59:26,963 [Thread-69] INFO  [com.netflix.eureka.DefaultEurekaServerContext] DefaultEurekaServerContext.java:79 - Shut down
+2019-05-27 21:59:27,012 [http-nio-8761-exec-8] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-MONITOR/169.254.105.5:sct-monitor:3000 with status DOWN (replication=false)
+2019-05-27 21:59:27,033 [Thread-69] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-27 21:59:27,158 [http-nio-8761-exec-1] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ZIPKIN/169.254.105.5:sct-zipkin:3001 with status DOWN (replication=false)
+2019-05-27 21:59:27,441 [http-nio-8761-exec-10] INFO  [c.netflix.eureka.registry.AbstractInstanceRegistry] AbstractInstanceRegistry.java:266 - Registered instance SCT-ADMIN-BIZ/169.254.105.5:sct-admin-biz:4100 with status DOWN (replication=false)
+2019-05-27 21:59:27,750 [Thread-69] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-localhost
+2019-05-27 21:59:27,832 [Thread-69] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-05-27 21:59:27,976 [Thread-69] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-05-27 21:59:27,980 [Thread-69] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient

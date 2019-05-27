@@ -20,7 +20,7 @@
       <el-form-item label="个性头像" prop="avatar" label-width="120px">
         <el-upload
           class="avatar-uploader"
-          action=""
+          :action="localUpload"
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
           :before-upload="beforeAvatarUpload">
@@ -41,8 +41,9 @@
 </template>
 
 <script>
-  import { save, edit } from '@/api/user'
-  import { parseTime } from '@/utils/index'
+  import {save, edit} from '@/api/user'
+  import {localUpload} from '@/api/constant'
+  import {parseTime} from '@/utils/index'
 
   export default {
     //父组件向子组件传值，通过props获取。
@@ -54,6 +55,7 @@
       return {
         dialogVisible: false,
         dialogTitle: 'Add',
+        localUpload: localUpload,
         form: {
           id: '',
           username: '',

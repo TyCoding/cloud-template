@@ -7,6 +7,9 @@ import cn.tycoding.api.common.constant.enums.CommonEnums;
 import cn.tycoding.api.common.controller.BaseController;
 import cn.tycoding.api.common.utils.QueryPage;
 import cn.tycoding.api.common.utils.Result;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +24,7 @@ import java.util.Map;
 @Slf4j
 @RestController
 @RequestMapping("/user")
+@Api(value = "SysUserController", tags = {"用户信息管理接口"})
 public class SysUserController extends BaseController {
 
     @Autowired
@@ -32,6 +36,7 @@ public class SysUserController extends BaseController {
      * @return
      */
     @GetMapping("/info")
+    @ApiOperation(value = "获取当前授权用户信息", notes = "必须经过了OAuth授权")
     public Result<SysUser> info() {
         String username = SecurityUtils.getUsername();
         SysUser user = sysUserService.findByName(username);
@@ -48,6 +53,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @GetMapping("/info/{username}")
+    @ApiOperation(value = "根据用户名查询用户信息")
+    @ApiImplicitParam(name = "username", value = "用户名", required = true, dataType = "String")
     public Result<SysUser> info(@PathVariable("username") String username) {
         return new Result<SysUser>(sysUserService.findByName(username));
     }
@@ -59,6 +66,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @PostMapping("/list")
+    @ApiOperation(value = "分页、条件查询用户列表信息")
+    @ApiImplicitParam(name = "user", value = "查询条件", required = true, dataType = "SysUser", paramType = "body")
     public Result<Map> list(SysUser user, QueryPage queryPage) {
         Example example = new Example(SysUser.class);
         Example.Criteria criteria = example.createCriteria();
@@ -79,6 +88,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @GetMapping("/{id}")
+    @ApiOperation(value = "查询详细用户信息", notes = "id存在且大于0")
+    @ApiImplicitParam(name = "id", value = "用户编号", required = true, dataType = "Long")
     public Result<SysUser> findById(@PathVariable Long id) {
         if (id == null || id == 0) {
             return new Result<>();
@@ -94,6 +105,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @PostMapping
+    @ApiOperation(value = "添加用户")
+    @ApiImplicitParam(name = "user", value = "用户实体信息", required = true, dataType = "SysUser", paramType = "body")
     public Result add(@RequestBody SysUser user) {
         sysUserService.save(user);
         return new Result();
@@ -106,6 +119,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @DeleteMapping("/{id}")
+    @ApiOperation(value = "删除用户")
+    @ApiImplicitParam(name = "id", value = "用户编号", required = true, dataType = "Long")
     public Result delete(@PathVariable Long id) {
         sysUserService.delete(id);
         return new Result();
@@ -118,6 +133,8 @@ public class SysUserController extends BaseController {
      * @return
      */
     @PutMapping("/edit")
+    @ApiOperation(value = "更新用户")
+    @ApiImplicitParam(name = "user", value = "用户实体信息", required = true, dataType = "SysUser", paramType = "body")
     public Result edit(@RequestBody SysUser user) {
         sysUserService.updateNotNull(user);
         return new Result();

@@ -56,6 +56,16 @@ export const constantRoutes = [
   },
 
   {
+    path: '/storage',
+    component: Layout,
+    children: [{
+      path: 'http://localhost:3000/',
+      name: '接口文档',
+      meta: { title: '接口文档', icon: 'dashboard' }
+    }]
+  },
+
+  {
     path: '/admin',
     component: Layout,
     redirect: '/admin/user',
@@ -63,16 +73,16 @@ export const constantRoutes = [
     meta: { title: '权限管理', icon: 'example' },
     children: [
       {
+        path: 'doc',
+        name: '接口文档',
+        component: () => import('@/views/doc/swagger'),
+        meta: { title: '接口文档', icon: 'table' }
+      },
+      {
         path: 'user',
         name: '用户管理',
         component: () => import('@/views/user/index'),
         meta: { title: '用户管理', icon: 'table' }
-      },
-      {
-        path: 'role',
-        name: '角色管理',
-        component: () => import('@/views/user/index'),
-        meta: { title: '角色管理', icon: 'table' }
       },
     ]
   },
@@ -85,18 +95,21 @@ export const constantRoutes = [
     meta: { title: '系统监控', icon: 'nested' },
     children: [
       {
-        path: 'http://localhost:3000/',
+        path: 'admin',
         name: '服务监控',
+        component: () => import('@/views/monitor/admin'),
         meta: { title: '服务监控', icon: 'table' }
       },
       {
-        path: 'http://localhost:3001/',
+        path: 'zipkin',
         name: '链路监控',
+        component: () => import('@/views/monitor/zipkin'),
         meta: { title: '链路监控', icon: 'table' }
       },
       {
-        path: 'http://localhost:8761/',
+        path: 'eureka',
         name: '注册中心',
+        component: () => import('@/views/monitor/eureka'),
         meta: { title: '注册中心', icon: 'table' }
       },
     ]
