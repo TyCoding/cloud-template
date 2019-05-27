@@ -49,8 +49,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/")
+                .deleteCookies("JSESSIONID")
+
+                .and()
                 .authorizeRequests()
-                .antMatchers("/user/info/*")
+                .antMatchers("/user/info/*", "/logout")
                 .permitAll()
                 .anyRequest()
                 .authenticated()

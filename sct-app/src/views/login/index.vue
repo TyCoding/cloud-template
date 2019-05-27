@@ -57,7 +57,7 @@
       return {
         date: parseTime(new Date().getTime(), ''),
         loginForm: {
-          username: 'tycoding',
+          username: 'admin',
           password: '123456'
         },
         loginRules: {

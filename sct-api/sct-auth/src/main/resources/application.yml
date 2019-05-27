@@ -14,6 +14,11 @@ spring:
       name: ${spring.application.name}
       profile: ${spring.profiles.active}
 
+# feign 配置
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   instance:
     prefer-ip-address: true

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import axios from 'axios'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
@@ -26,6 +27,8 @@ import '@/permission' // permission control
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale })
+
+axios.defaults.headers.post['Authorization'] = 'Basic Y2xpZW50OnNlY3JldA==';
 
 Vue.config.productionTip = false
 

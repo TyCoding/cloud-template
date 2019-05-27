@@ -2,15 +2,19 @@ import request from '@/utils/request'
 
 export function login(data) {
   return request({
-    url: '/auth/user/login',
+    url: '/auth/oauth/token',
     method: 'post',
-    data
+    params: {
+      username: data.username,
+      password: data.password,
+      grant_type: 'password'
+    }
   })
 }
 
 export function getInfo(token) {
   return request({
-    url: '/auth/user/info',
+    url: '/admin/user/info',
     method: 'get',
     params: { token }
   })
@@ -18,8 +22,8 @@ export function getInfo(token) {
 
 export function logout() {
   return request({
-    url: '/auth/user/logout',
-    method: 'get'
+    url: '/auth/token/logout',
+    method: 'delete'
   })
 }
 

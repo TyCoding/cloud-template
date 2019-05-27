@@ -31,6 +31,20 @@ public class SecurityUtils {
     }
 
     /**
+     * 获取用户名
+     *
+     * @return
+     */
+    public String getUsername() {
+        Authentication authentication = getAuthentication();
+        Object principal = authentication.getPrincipal();
+        if (!(principal instanceof SctUser)) {
+            return (String) principal;
+        }
+        return null;
+    }
+
+    /**
      * 获取用户
      */
     public SctUser getUser(Authentication authentication) {

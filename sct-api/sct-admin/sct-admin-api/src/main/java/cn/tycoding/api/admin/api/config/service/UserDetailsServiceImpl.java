@@ -58,7 +58,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         // 模拟构造包含用户角色列表的`List<GrantedAuthority>`对象
         List<GrantedAuthority> authorityList = AuthorityUtils.createAuthorityList("ADMIN");
 
-        return new SctUser(user.getId(), user.getUsername(), user.getPassword(),
-                true, true, true, true, authorityList);
+        return new SctUser(user.getId(), user.getUsername(), user.getPassword(), true, true, true, true, authorityList);
     }
 }

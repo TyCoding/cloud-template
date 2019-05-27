@@ -1,12 +1,12 @@
 package cn.tycoding.api.admin.biz.controller;
 
 import cn.tycoding.api.admin.api.entity.SysUser;
+import cn.tycoding.api.admin.api.utils.SecurityUtils;
 import cn.tycoding.api.admin.biz.service.SysUserService;
 import cn.tycoding.api.common.constant.enums.CommonEnums;
 import cn.tycoding.api.common.controller.BaseController;
 import cn.tycoding.api.common.utils.QueryPage;
 import cn.tycoding.api.common.utils.Result;
-import cn.tycoding.api.admin.api.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,11 +26,6 @@ public class SysUserController extends BaseController {
     @Autowired
     private SysUserService sysUserService;
 
-    @GetMapping("/test")
-    public String test() {
-        return "this is test";
-    }
-
     /**
      * 获取当前用户信息
      *
@@ -38,7 +33,7 @@ public class SysUserController extends BaseController {
      */
     @GetMapping("/info")
     public Result<SysUser> info() {
-        String username = SecurityUtils.getUser().getUsername();
+        String username = SecurityUtils.getUsername();
         SysUser user = sysUserService.findByName(username);
         if (user == null) {
             return new Result<>(CommonEnums.USER_ERROR);

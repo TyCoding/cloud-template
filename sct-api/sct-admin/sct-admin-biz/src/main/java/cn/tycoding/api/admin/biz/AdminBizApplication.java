@@ -1,5 +1,6 @@
 package cn.tycoding.api.admin.biz;
 
+import cn.tycoding.api.admin.api.annotation.EnableSctResourceServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -12,6 +13,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @author tycoding
  * @date 2019-05-22
  */
+@EnableSctResourceServer
 @MapperScan("cn.tycoding.api.admin.biz.mapper")
 @EnableFeignClients
 @EnableEurekaClient

@@ -12,8 +12,6 @@ const name = defaultSettings.title || 'Spring Cloud Template' // page title
 // For example, Mac: sudo npm run
 const port = 8100 // dev port
 
-const apiPort = 9999
-
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
   /**
