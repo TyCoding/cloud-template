@@ -10,19 +10,14 @@ export function doc() {
   })
 }
 
-
-
 //Spring Boot Admin
-export const admin = process.env.VUE_APP_BASE_API + '/monitor/'
+export const admin = 'http://localhost:3000/'
 
 //ZipKin
-export const zipkin = process.env.VUE_APP_BASE_API + '/zipkin/'
+export const zipkin = 'http://localhost:3001/'
 
 //Eureka
-export const eureka = process.env.VUE_APP_BASE_API + '/eureka/'
-
-//本地文件上传接口
-export const localUpload = process.env.VUE_APP_BASE_API + "/admin/storage/local/upload"
+export const eureka = 'http://localhost:8761/'
 
 //Swagger2
 export const swagger = process.env.VUE_APP_BASE_API + '/admin/swagger-ui.html'

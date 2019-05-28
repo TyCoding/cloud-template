@@ -28,6 +28,10 @@
           <div>提供该项目开发过程的完整文档</div>
           <div>手把手教你入门Spring Cloud + Vue分布式微服务项目开发</div>
         </el-collapse-item>
+        <el-collapse-item title="食用说明（必看）" name="5">
+          <div>本项目由 <a href="https://github.com/TyCoding/" target="_blank">TyCoding</a> 开发，但是由于本人技术有限，项目中有不完整的地方</div>
+          <div>如果前辈有更好的解决方案，请尽快联系我。如果对你的学习有帮助，欢迎点击项目右上角Star给作者一些鼓励</div>
+        </el-collapse-item>
       </el-collapse>
     </el-card>
   </div>
@@ -39,7 +43,7 @@ export default {
   name: 'Dashboard',
   data() {
     return {
-      activeNames: ['1', '2', '3', '4']
+      activeNames: ['1', '2', '3', '4', '5']
     }
   }
 }

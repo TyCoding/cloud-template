@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <el-card>
 <!--    <div v-html="html"></div>-->
     <iframe width="400" id="iframe" frameborder="0" scrolling="auto" :src="url"></iframe>
-  </div>
+  </el-card>
 </template>
 
 <script>

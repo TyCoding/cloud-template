@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <el-card>
     <iframe width="400" id="iframe" frameborder="0" scrolling="auto" :src="url"></iframe>
-  </div>
+  </el-card>
 </template>
 
 <script>

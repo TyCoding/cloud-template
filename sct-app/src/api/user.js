@@ -64,3 +64,12 @@ export function edit(data) {
     data
   })
 }
+
+export function upload(file) {
+  return request({
+    url: '/admin/storage/local/upload',
+    method: 'post',
+    headers: { "Content-Type": "multipart/form-data" },
+    params: file
+  })
+}
