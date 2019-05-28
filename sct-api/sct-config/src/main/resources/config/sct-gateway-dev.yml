@@ -6,4 +6,13 @@ zuul:
     sct-admin:
       path: /api/admin/**
       serviceId: sct-admin-biz
+    sct-monitor:
+      path: /api/monitor/**
+      serviceId: sct-monitor
+    sct-zipkin:
+      path: /api/zipkin/**
+      serviceId: sct-zipkin
+    sct-eureka:
+      path: /api/eureka/**
+      serviceId: sct-eureka
 

@@ -1,18 +1,28 @@
+import request from '@/utils/request'
+
+export function doc() {
+  return request({
+    url: '/admin/swagger-ui.html',
+    method: 'get',
+    params: {
+      accept: 'text/html, text/plain',
+    }
+  })
+}
+
+
+
 //Spring Boot Admin
-export const admin = 'http://localhost:3000/'
+export const admin = process.env.VUE_APP_BASE_API + '/monitor/'
 
 //ZipKin
-export const zipkin = 'http://localhost:3001/zipkin/'
+export const zipkin = process.env.VUE_APP_BASE_API + '/zipkin/'
 
 //Eureka
-export const eureka = 'http://localhost:8761/'
+export const eureka = process.env.VUE_APP_BASE_API + '/eureka/'
 
+//本地文件上传接口
+export const localUpload = process.env.VUE_APP_BASE_API + "/admin/storage/local/upload"
 
-/**
- * 本地文件上传接口
- * @type {string}
- */
-export const localUpload = "/storage/local/upload"
-
-
-export const swagger = 'http://localhost:swagger-ui.html'
+//Swagger2
+export const swagger = process.env.VUE_APP_BASE_API + '/admin/swagger-ui.html'

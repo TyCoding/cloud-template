@@ -15,8 +15,13 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         log.info("加载了 >> ResourceServerConfig...");
         http
+                //允许使用iframe 嵌套，避免swagger-ui 不被加载的问题
+                .headers()
+                .frameOptions().disable()
+
+                .and()
                 .authorizeRequests()
-                .antMatchers("/user/info/*")
+                .antMatchers("/user/info/*", "/swagger-ui.html", "/webjars/**", "/swagger-resources/**", "/v2/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()

@@ -3,8 +3,10 @@ package cn.tycoding.api.admin.biz.controller;
 import cn.tycoding.api.common.constant.enums.CommonEnums;
 import cn.tycoding.api.common.utils.Result;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.ResourceUtils;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,7 +35,8 @@ public class UploadController {
      * @param request
      * @return
      */
-    @RequestMapping("/upload")
+    @PostMapping("/upload")
+    @ApiOperation(value = "上传接口")
     public Result upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws FileNotFoundException {
         try {
             //获取文件在服务器的储存位置

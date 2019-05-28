@@ -1,18 +1,26 @@
 <template>
   <div>
+<!--    <div v-html="html"></div>-->
     <iframe width="400" id="iframe" frameborder="0" scrolling="auto" :src="url"></iframe>
   </div>
 </template>
 
 <script>
-  import {swagger} from '@/api/constant'
+  import {swagger, doc} from '@/api/constant'
 
   export default {
     name: "swagger",
     data() {
       return {
-        url: swagger
+        url: swagger,
+        html: ''
       }
+    },
+    created() {
+
+      // doc().then(response => {
+      //   this.html = response;
+      // })
     },
     mounted() {
       /**
@@ -22,7 +30,7 @@
       const deviceWidth = document.documentElement.clientWidth;
       const deviceHeight = document.documentElement.clientHeight;
       oIframe.style.width = (Number(deviceWidth) - 220) + 'px'; //数字是页面布局宽度差值
-      oIframe.style.height = (Number(deviceHeight) - 120) + 'px'; //数字是页面布局高度差
+      oIframe.style.height = (Number(deviceHeight) - 20) + 'px'; //数字是页面布局高度差
     },
   }
 </script>

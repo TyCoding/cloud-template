@@ -56,16 +56,6 @@ export const constantRoutes = [
   },
 
   {
-    path: '/storage',
-    component: Layout,
-    children: [{
-      path: 'http://localhost:3000/',
-      name: '接口文档',
-      meta: { title: '接口文档', icon: 'dashboard' }
-    }]
-  },
-
-  {
     path: '/admin',
     component: Layout,
     redirect: '/admin/user',

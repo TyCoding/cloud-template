@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
@@ -13,6 +14,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @author tycoding
  * @date 2019-05-22
  */
+@EnableSwagger2
 @EnableSctResourceServer
 @MapperScan("cn.tycoding.api.admin.biz.mapper")
 @EnableFeignClients
