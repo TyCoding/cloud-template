@@ -41,7 +41,7 @@ public class UploadController {
         try {
             //获取文件在服务器的储存位置
             File path = new File(ResourceUtils.getURL("classpath:").getPath());
-            File filePath = new File(path.getAbsolutePath(), "static/upload/");
+            File filePath = new File(path.getAbsolutePath(), "upload/");
             log.info("文件的保存路径：" + filePath.getAbsolutePath());
             if (!filePath.exists() && !filePath.isDirectory()) {
                 log.info("目录不存在，创建目录:" + filePath);
@@ -56,8 +56,8 @@ public class UploadController {
             String type = originalFileName.substring(originalFileName.lastIndexOf(".") + 1);
             log.info("文件类型：" + type);
 
-            //设置文件新名称，IdWorker生成
-            String fileName = ((long) Math.random() * 10000000) + "." + type;
+            //设置文件新名称
+            String fileName = ((long) ((Math.random() + 1) * 100000000)) + "." + type;
             log.info("新文件名称：" + fileName);
 
             //在指定路径下创建一个文件

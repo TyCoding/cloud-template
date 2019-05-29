@@ -18,13 +18,14 @@
                         value-format="yyyy-MM-dd HH:mm:ss" format="yyyy-MM-dd HH:mm:ss"></el-date-picker>
       </el-form-item>
       <el-form-item label="个性头像" prop="avatar" label-width="120px">
-        <el-upload
-          class="avatar-uploader"
-          :http-request="editAvatar"
-          :show-file-list="false"
-          action="customize">
+        <el-upload class="avatar-uploader"
+                   :action="localUpload"
+                   :show-file-list="false"
+                   :on-success="handleAvatarSuccess"
+                   :before-upload="beforeAvatarUpload">
           <img v-if="form.avatar" :src="form.avatar" class="avatar">
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+          <div v-if="!form.avatar" class="el-upload__text">点我上传本地头像</div>
         </el-upload>
       </el-form-item>
     </el-form>
@@ -41,7 +42,6 @@
 
 <script>
   import {save, edit, upload} from '@/api/user'
-  import {localUpload} from '@/api/constant'
   import {parseTime} from '@/utils/index'
 
   export default {
@@ -54,7 +54,7 @@
       return {
         dialogVisible: false,
         dialogTitle: 'Add',
-        localUpload: localUpload,
+        localUpload: upload,
         form: {
           id: '',
           username: '',
@@ -133,24 +133,30 @@
           }
         });
       },
-      editAvatar(params) {
-        console.log("uploadFile", params);
-        const _file = params.file;
-        const isLt2M = _file.size / 1024 / 1024 < 2; // 通过 FormData 对象上传文件
-        var formData = new FormData();
-        formData.append("file", _file);
-        if (!isLt2M) {
-          this._notify('请上传2M以下的文件', 'error')
-          return false;
+      //文件上传成功的钩子函数
+      handleAvatarSuccess(res, file, fileList) {
+        this._notify('图片上传成功', 'success');
+        if (res.code == 200) {
+          this.form.avatar = res.data.url;
+          this.info.avatar = res.data.url;
+          this.avatarDialog = false;
         }
-        // 发起请求
-        upload(formData).then(res => {
-          if (code === 200) {
-            this.form.avatar = res.data.url;
-          } else {
-            this._notify(res.msg, 'error')
-          }
-        })
+      },
+      //文件上传前的前的钩子函数
+      beforeAvatarUpload(file) {
+        const isJPG = file.type === 'image/jpeg';
+        const isGIF = file.type === 'image/gif';
+        const isPNG = file.type === 'image/png';
+        const isBMP = file.type === 'image/bmp';
+        const isLt2M = file.size / 1024 / 1024 < 2;
+
+        if (!isJPG && !isGIF && !isPNG && !isBMP) {
+          this.$message.error('上传图片必须是JPG/GIF/PNG/BMP 格式!');
+        }
+        if (!isLt2M) {
+          this.$message.error('上传图片大小不能超过 2MB!');
+        }
+        return (isJPG || isBMP || isGIF || isPNG) && isLt2M;
       },
     }
   }

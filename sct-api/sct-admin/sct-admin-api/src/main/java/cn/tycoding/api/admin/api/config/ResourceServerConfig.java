@@ -1,6 +1,7 @@
 package cn.tycoding.api.admin.api.config;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 
@@ -21,8 +22,22 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
                 .and()
                 .authorizeRequests()
-                .antMatchers("/user/info/*", "/swagger-ui.html", "/webjars/**", "/swagger-resources/**", "/v2/**")
+                .antMatchers(HttpMethod.GET,
+                        "/upload/**",
+                        "/",
+                        "/*.html",
+                        "/favicon.ico",
+                        "/**/*.html",
+                        "/**/*.css",
+                        "/**/*.js",
+                        "/webjars/**",
+                        "/swagger-resources/**",
+                        "/v2/api-docs/**")
                 .permitAll()
+
+                .antMatchers("/actuator/**", "/user/info/*", "/storage/local/upload")
+                .permitAll()
+
                 .anyRequest()
                 .authenticated()
 

@@ -28,3 +28,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://sct-eureka:8761/eureka/
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
