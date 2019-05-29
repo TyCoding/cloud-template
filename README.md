@@ -22,6 +22,8 @@
 
 [从零开始搭建Spring Cloud脚手架](https://github.com/TyCoding/cloud-template/blob/master/cloud-template/doc/env-1.md)
 
+[如何食用vue-admin-template前端项目](https://github.com/TyCoding/cloud-template/tree/master/sct-app)
+
 ## Spring Cloud Template
 
 * 一套极简的Spring Cloud微服务项目模板，开箱即用，方便扩展
