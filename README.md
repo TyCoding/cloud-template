@@ -41,6 +41,7 @@
 | Spring Security OAuth2 | 2.3.4.RELEASE |
 | tk.mybatis | 4.1.5 |
 | vue-admin-template | 4.1.0 |
+| Swagger2 | 2.9.2 |
 
 ## 模块说明
 
