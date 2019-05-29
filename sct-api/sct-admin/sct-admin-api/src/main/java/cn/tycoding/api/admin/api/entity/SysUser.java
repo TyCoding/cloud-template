@@ -35,11 +35,6 @@ public class SysUser implements Serializable {
     private String password;
 
     /**
-     * 随机盐
-     */
-    private String salt;
-
-    /**
      * 手机号
      */
     private String phone;

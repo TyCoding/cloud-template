@@ -39,14 +39,14 @@
 
 <script>
 
-export default {
-  name: 'Dashboard',
-  data() {
-    return {
-      activeNames: ['1', '2', '3', '4', '5']
+  export default {
+    name: 'Dashboard',
+    data() {
+      return {
+        activeNames: ['1', '2', '3', '4', '5']
+      }
     }
   }
-}
 </script>
 
 <style lang="scss">
@@ -54,7 +54,8 @@ export default {
     text-align: center;
     padding: 20px;
   }
-  .el-collapse-item__header{
+
+  .el-collapse-item__header {
     display: block !important;
   }
 </style>

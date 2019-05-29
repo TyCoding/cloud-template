@@ -5,6 +5,7 @@ import cn.tycoding.api.common.utils.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +29,11 @@ import java.util.Map;
 @Api(value = "UploadController", tags = {"本地上传模块接口"})
 public class UploadController {
 
+    @Value("${server.port}")
+    private String port;
+
+    private final String ip = "http://127.0.0.1";
+
     /**
      * 文件上传
      *
@@ -38,10 +44,11 @@ public class UploadController {
     @PostMapping("/upload")
     @ApiOperation(value = "上传接口")
     public Result upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws FileNotFoundException {
+        String host = ip + ":" + port;
         try {
             //获取文件在服务器的储存位置
             File path = new File(ResourceUtils.getURL("classpath:").getPath());
-            File filePath = new File(path.getAbsolutePath(), "upload/");
+            File filePath = new File(path.getAbsolutePath(), "static/upload/");
             log.info("文件的保存路径：" + filePath.getAbsolutePath());
             if (!filePath.exists() && !filePath.isDirectory()) {
                 log.info("目录不存在，创建目录:" + filePath);
@@ -70,7 +77,7 @@ public class UploadController {
 
             Map map = new HashMap<>();
             map.put("name", fileName);
-            map.put("url", "/upload/" + fileName);
+            map.put("url", host + "/upload/" + fileName);
 
             return new Result(map);
         } catch (Exception e) {

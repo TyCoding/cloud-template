@@ -365,10 +365,10 @@ props: ['info']
 
 //Vue实例
 methods: {
-    //父组件注册的方法，子组件通过`this.$emit()`的方式调用这个方法将参数传递给父组件的val。
-    getMsg(val) {
-        console.log("这是子组件传递来的数据：" + val);
-    }
+  //父组件注册的方法，子组件通过`this.$emit()`的方式调用这个方法将参数传递给父组件的val。
+  getMsg(val) {
+      console.log("这是子组件传递来的数据：" + val);
+  }
 }
 ```
 
@@ -379,9 +379,9 @@ methods: {
 
 //Vue实例
 methods: {
-    sendMsg() {
-        this.$emit('func', '我是来自子组件的数据');
-    }
+  sendMsg() {
+      this.$emit('func', '我是来自子组件的数据');
+  }
 }
 ```
 
@@ -452,15 +452,18 @@ So
 子组件可通过`props: ['aa']`得到父组件传递的数据，但是要实时绑定到`save.vue`修改信息的表单上还需要监听一下，所以在子组件上：
 
 ```javascript
+//`props`不属于data，但是`props`中的参数可以像data中的参数一样直接使用
+props: ['sonData'],
+    
 watch: {
-      'sonData': function (newVal, oldVal) {
-        this.form = newVal
-        this.dialogVisible = true
-        if (newVal.id != null) {
-          this.dialogTitle = 'Edit'
-        }
-      },
-    },
+  'sonData': function (newVal, oldVal) {
+    this.form = newVal
+    this.dialogVisible = true
+    if (newVal.id != null) {
+      this.dialogTitle = 'Edit'
+    }
+  },
+},
 ```
 
 如果父组件传递的值`sonData`改变了，就证明用户点击了编辑/新增按钮，立即将传递来的值绑定到表单对象`form`上，并打开模块框`diaalogVisible=true`
@@ -477,11 +480,11 @@ So
 子组件通过`this.$emit('sonStatus', val)`会强制父组件`index.vue`中改变绑定的值，是实时监听的。而父组件`index.vue`对应绑定的是一个方法对象`status()`，不同于父组件给子组件传值，子组件给父组件传值通过方法对象绑定，这个方法就相当于`watch`实时监听值的改变。
 
 ```javascript
- status(data) {
-        if (data) {
-          this.fetchData();
-        }
-      },
+status(data) {
+  if (data) {
+    this.fetchData();
+  }
+},
 ```
 
 如上，一旦子组件告诉父组件，我已经修改了数据，你需要更新了。此时父组件的`status`方法会立即鉴定到值的变化并立即触发传方法`fetchData()`刷新表格数据。
@@ -499,21 +502,21 @@ So
 2.  在`src/router/index.js`下新增一条路由：
 
 ```javascript
-  {
-    path: '/admin',
-    component: Layout,
-    redirect: '/admin/user',
-    name: '权限管理',
-    meta: { title: '权限管理', icon: 'example' },
-    children: [
-      {
-        path: 'user',
-        name: '用户管理',
-        component: () => import('@/views/user/index'),
-        meta: { title: '用户管理', icon: 'table' }
-      },
-    ]
-  },
+{
+  path: '/admin',
+  component: Layout,
+  redirect: '/admin/user',
+  name: '权限管理',
+  meta: { title: '权限管理', icon: 'example' },
+  children: [
+    {
+      path: 'user',
+      name: '用户管理',
+      component: () => import('@/views/user/index'),
+      meta: { title: '用户管理', icon: 'table' }
+    },
+  ]
+},
 ```
 
 如上，一旦在`router/index.js`中新增了一条路由导航，侧边栏会自动渲染一个导航。其中：

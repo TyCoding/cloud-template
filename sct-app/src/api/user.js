@@ -65,13 +65,12 @@ export function edit(data) {
   })
 }
 
-// export function upload(file) {
-//   return request({
-//     url: '/admin/storage/local/upload',
-//     method: 'post',
-//     headers: { "Content-Type": "multipart/form-data" },
-//     params: file
-//   })
-// }
+export function changePass(data) {
+  return request({
+    url: '/admin/user/changePass',
+    method: 'post',
+    data
+  })
+}
 
 export const upload = process.env.VUE_APP_BASE_API + '/admin/storage/local/upload'

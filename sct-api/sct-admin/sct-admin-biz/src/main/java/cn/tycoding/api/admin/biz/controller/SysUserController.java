@@ -13,7 +13,6 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tk.mybatis.mapper.entity.Example;
 
 import java.util.Map;
 
@@ -69,15 +68,7 @@ public class SysUserController extends BaseController {
     @ApiOperation(value = "分页、条件查询用户列表信息")
     @ApiImplicitParam(name = "user", value = "查询条件", required = true, dataType = "SysUser", paramType = "body")
     public Result<Map> list(SysUser user, QueryPage queryPage) {
-        Example example = new Example(SysUser.class);
-        Example.Criteria criteria = example.createCriteria();
-        if (user.getUsername() != null && !user.getUsername().isEmpty()) {
-            criteria.andCondition("username=", user.getUsername());
-        }
-        if (user.getPhone() != null && !user.getPhone().isEmpty()) {
-            criteria.andCondition("phone", user.getPhone());
-        }
-        return new Result<Map>(this.selectByPageNumSize(queryPage, () -> sysUserService.selectByExample(example)));
+        return new Result<Map>(this.selectByPageNumSize(queryPage, () -> sysUserService.list(user)));
     }
 
 
@@ -108,7 +99,7 @@ public class SysUserController extends BaseController {
     @ApiOperation(value = "添加用户")
     @ApiImplicitParam(name = "user", value = "用户实体信息", required = true, dataType = "SysUser", paramType = "body")
     public Result add(@RequestBody SysUser user) {
-        sysUserService.save(user);
+        sysUserService.create(user);
         return new Result();
     }
 
@@ -136,7 +127,21 @@ public class SysUserController extends BaseController {
     @ApiOperation(value = "更新用户")
     @ApiImplicitParam(name = "user", value = "用户实体信息", required = true, dataType = "SysUser", paramType = "body")
     public Result edit(@RequestBody SysUser user) {
-        sysUserService.updateNotNull(user);
+        sysUserService.update(user);
+        return new Result();
+    }
+
+    /**
+     * 修改密码
+     *
+     * @param user
+     * @return
+     */
+    @PostMapping("/changePass")
+    @ApiOperation(value = "修改密码")
+    @ApiImplicitParam(name = "user", value = "用户实体信息", required = true, dataType = "SysUser", paramType = "body")
+    public Result changePass(@RequestBody SysUser user) {
+        sysUserService.changePass(user);
         return new Result();
     }
 

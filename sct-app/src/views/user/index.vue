@@ -18,14 +18,9 @@
             {{ scope.row.username }}
           </template>
         </el-table-column>
-        <el-table-column label="Password" width="150" align="center">
+        <el-table-column label="Password" width="250" align="center">
           <template slot-scope="scope">
             <span>{{ scope.row.password }}</span>
-          </template>
-        </el-table-column>
-        <el-table-column label="Salt" width="200" align="center">
-          <template slot-scope="scope">
-            {{ scope.row.salt }}
           </template>
         </el-table-column>
         <el-table-column label="Phone" width="150" align="center">
@@ -75,7 +70,7 @@
         listLoading: true,
         listQuery: {
           page: 1,
-          limit: 20,
+          limit: 3,
           importance: undefined,
           title: undefined,
           type: undefined,

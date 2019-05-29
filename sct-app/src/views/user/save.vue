@@ -7,7 +7,7 @@
       <el-form-item label="登录账户" prop="username" label-width="120px">
         <el-input v-model="form.username" placeholder="请输入用户名"></el-input>
       </el-form-item>
-      <el-form-item label="登录密码" prop="password" label-width="120px">
+      <el-form-item v-if="dialogTitle != 'Edit'" label="登录密码" prop="password" label-width="120px">
         <el-input v-model="form.password" placeholder="请输入密码"></el-input>
       </el-form-item>
       <el-form-item label="联系电话" prop="phone" label-width="120px">
@@ -68,7 +68,7 @@
           password: [{required: true, trigger: 'blur', message: '请输入登录密码'}],
           phone: [{required: true, trigger: 'blur', message: '请输入联系电话'}],
           createTime: [{required: true, trigger: 'blur', message: '请选择创建时间'}],
-          // avatar: [{required: true, trigger: 'blur', message: '请上传个性头像'}]
+          avatar: [{required: true, trigger: 'blur', message: '请上传个性头像'}]
         },
       }
     },
@@ -95,7 +95,6 @@
         this.form.phone = null
         this.form.avatar = null
         this.form.createTime = parseTime(new Date(), '')
-        this.form.salt = null
       },
       handleClose() {
         this.clearForm();
@@ -135,11 +134,9 @@
       },
       //文件上传成功的钩子函数
       handleAvatarSuccess(res, file, fileList) {
-        this._notify('图片上传成功', 'success');
         if (res.code == 200) {
+          this._notify('图片上传成功', 'success');
           this.form.avatar = res.data.url;
-          this.info.avatar = res.data.url;
-          this.avatarDialog = false;
         }
       },
       //文件上传前的前的钩子函数

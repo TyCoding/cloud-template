@@ -16,17 +16,16 @@
               Home
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/PanJiaChen/vue-admin-template/">
+          <a target="_blank" href="https://github.com/TyCoding/cloud-template/">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
-          <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">
-            <el-dropdown-item>Docs</el-dropdown-item>
-          </a>
+          <el-dropdown-item @click.native="changePass">Change Pass</el-dropdown-item>
           <el-dropdown-item divided>
             <span style="display:block;" @click="logout">Log Out</span>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
+      <change-pass :changeStatus="status"></change-pass>
     </div>
   </div>
 </template>
@@ -35,17 +34,24 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
+import ChangePass from './ChangePass'
 
 export default {
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
+    ChangePass
   },
   computed: {
     ...mapGetters([
       'sidebar',
       'avatar'
     ])
+  },
+  data() {
+    return {
+      status: 0
+    }
   },
   methods: {
     toggleSideBar() {
@@ -54,6 +60,10 @@ export default {
     async logout() {
       await this.$store.dispatch('user/logout')
       this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+    },
+    changePass() {
+      console.log('change...')
+      this.status = new Date().getTime();
     }
   }
 }
