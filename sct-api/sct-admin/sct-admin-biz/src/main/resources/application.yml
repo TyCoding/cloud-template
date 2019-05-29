@@ -17,10 +17,10 @@ security:
     client:
       client-id: client
       client-secret: secret
-      access-token-uri: http://localhost:4000/oauth/token
-      user-authorization-uri: http://localhost:4000/oauth/authorize
+      access-token-uri: http://sct-auth:4000/oauth/token
+      user-authorization-uri: http://sct-auth:4000/oauth/authorize
     resource:
-      token-info-uri: http://localhost:4000/oauth/check_token
+      token-info-uri: http://sct-auth:4000/oauth/check_token
 
 eureka:
   instance:

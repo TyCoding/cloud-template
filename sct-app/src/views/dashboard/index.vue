@@ -22,7 +22,6 @@
         <el-collapse-item title="前后端分离式开发" name="3">
           <div>基于 vue-admin-template</div>
           <div>使用Vue框架，快速入门前后端分离式开发模式</div>
-          <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
         </el-collapse-item>
         <el-collapse-item title="完整的开发文档" name="4">
           <div>提供该项目开发过程的完整文档</div>

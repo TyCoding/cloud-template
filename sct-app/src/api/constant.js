@@ -1,14 +1,3 @@
-import request from '@/utils/request'
-
-export function doc() {
-  return request({
-    url: '/admin/swagger-ui.html',
-    method: 'get',
-    params: {
-      accept: 'text/html, text/plain',
-    }
-  })
-}
 
 //Spring Boot Admin
 export const admin = 'http://localhost:3000/'
