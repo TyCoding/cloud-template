@@ -10,6 +10,12 @@
 
 ## 介绍
 
+旨在提供一个最基础的CRUD模板，并没与太复杂的业务流程，想让初学微服务或者想要找个Vue+Node前后端分离项目的同学有一个案例参考。大家可以基于此项目继续扩展，或者看此项目和源码和文档自己尝试开发前后端分离的项目。
+
+**如果此项目对大家有帮助，欢迎右上角star支持作者**
+
+**注意：请以批判的角度看此项目，本人也是技术有限，如果你有更好的解决方案请尽快联系我。大牛勿喷**
+
 `cloud-template`: 一套极简的SpringCloud微服务项目模板，没有具体的业务，提供最详细的SpringCloud搭建流程
 
 `sct-api`: 分布式微服务项目后端接口
@@ -20,9 +26,9 @@
 
 在开始此项目前，请先学习这个基础项目模板 [cloud-template](https://github.com/TyCoding/cloud-template/tree/master/cloud-template) ，并仔细阅读以下开发文档：
 
-[从零开始搭建Spring Cloud脚手架](https://github.com/TyCoding/cloud-template/blob/master/cloud-template/doc/env-1.md)
+[从零开始搭建Spring Cloud脚手架](https://www.tycoding.cn/2019/05/30/cloud/cloud-template-api/)
 
-[如何食用vue-admin-template前端项目](https://github.com/TyCoding/cloud-template/tree/master/sct-app)
+[如何食用vue-admin-template前端项目](https://www.tycoding.cn/2019/05/30/cloud/cloud-template-app/)
 
 ## Spring Cloud Template
 
