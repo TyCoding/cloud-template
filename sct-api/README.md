@@ -20,7 +20,7 @@
 
 3. 导入项目根目录下的`base.sql`，建立数据库
 
-默认密码请参看`sct-admin-biz/src/test/PasswordEncoderTest.java`工具类
+默认密码请参看`sct-admin-biz/src/test/PasswordEncoderTest.java`测试类
 
 | Username | Password |
 | --- | --- |
