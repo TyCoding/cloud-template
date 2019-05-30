@@ -99,19 +99,19 @@ $ npm run dev
 
 ## 预览
 
-![](doc/2019052814147.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052814147.png)
 
-![](doc/2019052972549.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052972549.png)
 
-![](doc/2019052821354.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052821354.png)
 
-![](doc/2019052982515.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052982515.png)
 
-![](doc/2019052983430.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052983430.png)
 
-![](doc/2019052983452.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052983452.png)
 
-![](doc/2019052983458.png)
+![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052983458.png)
 
 ## 联系
 
