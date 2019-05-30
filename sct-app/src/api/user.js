@@ -27,9 +27,9 @@ export function logout() {
   })
 }
 
-export function getList(data) {
+export function getList(query, data) {
   return request({
-    url: '/admin/user/list',
+    url: '/admin/user/list?pageCode=' + query.page + '&pageSize=' + query.limit,
     method: 'post',
     data
   })

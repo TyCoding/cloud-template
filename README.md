@@ -83,16 +83,24 @@ sct-api
 
 3. 导入项目根目录下的`base.sql`，建立数据库
 
+默认密码请参看`sct-admin-biz/src/test/PasswordEncoderTest.java`工具类
+
+| Username | Password |
+| --- | --- |
+| tycoding | tycoding |
+| admin | admin |
+| test | test |
+
 4. 严格按照如下顺序依次启动服务模块
 
 ```
-EurekaApplication.java -- 服务注册中心
-ConfigApplication.java -- 服务配置中心
-MonitorApplication.java -- Spring Boot Admin监控
-ZipkinApplication.java -- Zipkin链路监控
-AdminBizApplication.java -- 系统管理模块
-AuthApplication.java -- 授权模块
-GatewayApplication.java -- Zuul网关
+1. EurekaApplication.java -- 服务注册中心
+2. ConfigApplication.java -- 服务配置中心
+3. MonitorApplication.java -- Spring Boot Admin监控
+4. ZipkinApplication.java -- Zipkin链路监控
+5. AdminBizApplication.java -- 系统管理模块
+6. AuthApplication.java -- 授权模块
+7. GatewayApplication.java -- Zuul网关
 ```
 
 5. 启动前端项目

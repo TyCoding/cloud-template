@@ -93,7 +93,7 @@
       },
       fetchData() {
         this.listLoading = true
-        getList(this.search).then(response => {
+        getList(this.listQuery, this.search).then(response => {
           this.list = response.data.rows
           this.total = response.data.total
           this.listLoading = false

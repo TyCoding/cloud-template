@@ -23,9 +23,9 @@
                    :show-file-list="false"
                    :on-success="handleAvatarSuccess"
                    :before-upload="beforeAvatarUpload">
-          <img v-if="form.avatar" :src="form.avatar" class="avatar">
+          <img v-if="imgURL" :src="imgURL" class="avatar">
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-          <div v-if="!form.avatar" class="el-upload__text">点我上传本地头像</div>
+          <div v-if="!imgURL" class="el-upload__text">点我上传本地头像</div>
         </el-upload>
       </el-form-item>
     </el-form>
@@ -55,6 +55,7 @@
         dialogVisible: false,
         dialogTitle: 'Add',
         localUpload: upload,
+        imgURL: '',
         form: {
           id: '',
           username: '',
@@ -78,6 +79,8 @@
         this.dialogVisible = true
         if (newVal.id != null) {
           this.dialogTitle = 'Edit'
+        } else {
+          this.dialogTitle = 'Add'
         }
       },
     },
@@ -94,6 +97,7 @@
         this.form.password = null
         this.form.phone = null
         this.form.avatar = null
+        this.imgURL = null
         this.form.createTime = parseTime(new Date(), '')
       },
       handleClose() {
@@ -137,6 +141,7 @@
         if (res.code == 200) {
           this._notify('图片上传成功', 'success');
           this.form.avatar = res.data.url;
+          this.imgURL = res.data.url;
         }
       },
       //文件上传前的前的钩子函数

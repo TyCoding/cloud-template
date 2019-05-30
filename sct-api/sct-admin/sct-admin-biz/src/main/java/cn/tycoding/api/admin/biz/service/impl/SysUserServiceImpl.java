@@ -45,6 +45,7 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUser> implements SysU
     @Override
     public void create(SysUser user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        this.save(user);
     }
 
     @Override
