@@ -266,25 +266,31 @@ export function findById(id) {
 
 ## 分页查询
 
+如果没有使用Vue+ElementUI实现分页查询经验的朋友可以先看下我的这篇文章：
+
+[Vue+ElementUI+SpringMVC实现分页](https://www.tycoding.cn/2018/07/30/vue-6/)
+
 `vue-admin-template`的作者其实提供好了一个`pagination`分页组件，是对Element-UI的`<el-pagination>`控件的封装。作者封装的这个组件是通用的，可以在项目的任何需要分页的位置使用，非常方便。如何食用呢？
 
 1.  在`src/components`下引入该组件
 
-![](doc/20190528211740.png)
+![](cloud-template-app/20190528211740.png)
 
 2.  在`src/api/user.js`中定义分页查询接口
 
 ```javascript
-export function getList(data) {
+export function getList(query, data) {
   return request({
-    url: '/admin/user/list',
+    url: '/admin/user/list?pageCode=' + query.page + '&pageSize=' + query.limit,
     method: 'post',
     data
   })
 }
 ```
 
-2.  在需要使用分页的组件中引入该分页组件
+传递三个参数：`pageCode`当前页码、`pageSize`每页多少记录、`data`查询条件
+
+3.  在需要使用分页的组件中引入该分页组件
 
 ```javascript
 <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit"
@@ -316,7 +322,7 @@ export function getList(data) {
     },
     methods: {
       fetchData() {
-        getList(this.search).then(response => {
+        getList(this.listQuery, this.search).then(response => {
           this.list = response.data.rows
           this.total = response.data.total
         })
@@ -326,6 +332,32 @@ export function getList(data) {
 </script>
 ```
 
+可以看到上面传递了两个参数：`listQuery`分页条件、`search`查询条件。
+
+也就是说分页查询：
+
+*   前端需要传递的参数：`pageCode`: 当前页码、`pageSize`：每页多少条记录。如果需要条件查询再传递查询条件
+*   后端需要返回的参数：`total`：数据库总记录数、`List<T>`：封装了查询到的数据集合
+
+可以看下后端的代码实现：
+
+```java
+// Controller
+@PostMapping("/list")
+@ResponseBody
+public Result<Map> list(SysUser user, QueryPage queryPage) {
+    return new Result<Map>(this.selectByPageNumSize(queryPage, () -> sysUserService.list(user)));
+}
+
+// QueryPage
+@Data
+@ToString
+public class QueryPage implements Serializable {
+
+    private int pageCode; //当前页
+    private int pageSize; //每页显示的记录数
+}
+```
 
 
 ## 组件传值
