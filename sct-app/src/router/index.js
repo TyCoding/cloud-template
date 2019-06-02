@@ -56,23 +56,34 @@ export const constantRoutes = [
   },
 
   {
+    path: '项目地址',
+    component: Layout,
+    children: [
+      {
+        path: 'https://github.com/TyCoding/cloud-template/',
+        meta: { title: '项目地址', icon: 'github' }
+      }
+    ]
+  },
+
+  {
     path: '/admin',
     component: Layout,
     redirect: '/admin/user',
     name: '权限管理',
-    meta: { title: '权限管理', icon: 'example' },
+    meta: { title: '权限管理', icon: 'setting' },
     children: [
       {
         path: 'doc',
         name: '接口文档',
         component: () => import('@/views/doc/swagger'),
-        meta: { title: '接口文档', icon: 'table' }
+        meta: { title: '接口文档', icon: 'documentation' }
       },
       {
         path: 'user',
         name: '用户管理',
         component: () => import('@/views/user/index'),
-        meta: { title: '用户管理', icon: 'table' }
+        meta: { title: '用户管理', icon: 'peoples' }
       },
     ]
   },
@@ -82,37 +93,26 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/monitor/admin',
     name: '系统监控',
-    meta: { title: '系统监控', icon: 'nested' },
+    meta: { title: '系统监控', icon: 'springcloud' },
     children: [
       {
         path: 'admin',
         name: '服务监控',
         component: () => import('@/views/monitor/admin'),
-        meta: { title: '服务监控', icon: 'table' }
+        meta: { title: '服务监控', icon: 'service-monitor' }
       },
       {
         path: 'zipkin',
         name: '链路监控',
         component: () => import('@/views/monitor/zipkin'),
-        meta: { title: '链路监控', icon: 'table' }
+        meta: { title: '链路监控', icon: 'zipkin' }
       },
       {
         path: 'eureka',
         name: '注册中心',
         component: () => import('@/views/monitor/eureka'),
-        meta: { title: '注册中心', icon: 'table' }
+        meta: { title: '注册中心', icon: 'service-center' }
       },
-    ]
-  },
-
-  {
-    path: '项目地址',
-    component: Layout,
-    children: [
-      {
-        path: 'https://github.com/TyCoding/cloud-template/',
-        meta: { title: '项目地址', icon: 'link' }
-      }
     ]
   },
 
