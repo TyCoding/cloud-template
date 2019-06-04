@@ -68,9 +68,9 @@ after: require('./mock/mock-server.js')
 
 如果你对Security-OAuth2还不熟悉，建议看下我之前写的文档：
 
-1.  [Spring Security OAuth2概念引入](https://www.tycoding.cn/2019/04/22/spring-boot-security-oauth2-start/)
-2.  [Spring Security OAuth2实战](https://tycoding.cn/2019/04/22/spring-boot-security-oauth2/)
-3.  [Spring Security OAuth2数据持久化](https://www.tycoding.cn/2019/04/23/spring-boot-security-oauth2-db/)
+1.  [Spring Security OAuth2概念引入](https://www.tycoding.cn/2019/04/22/boot/spring-boot-security-oauth2-start/)
+2.  [Spring Security OAuth2实战](https://tycoding.cn/2019/04/22/boot/spring-boot-security-oauth2/)
+3.  [Spring Security OAuth2数据持久化](https://www.tycoding.cn/2019/04/23/boot/spring-boot-security-oauth2-db/)
 
 Security-OAuth2中提供的默认获取Token的接口：`/oauth/token`，下面是使用Postman工具模拟请求的示例图：
 
