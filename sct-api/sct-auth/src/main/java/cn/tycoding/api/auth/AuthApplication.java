@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2019-05-21
  */
 @EnableFeignClients("cn.tycoding.api.admin.api.feign")
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class AuthApplication {
 

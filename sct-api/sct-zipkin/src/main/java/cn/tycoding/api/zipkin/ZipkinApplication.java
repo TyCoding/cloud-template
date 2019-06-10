@@ -12,7 +12,7 @@ import zipkin.server.internal.EnableZipkinServer;
  * @date 2019-05-21
  */
 @EnableZipkinServer
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class ZipkinApplication {
 

@@ -111,6 +111,12 @@ $ npm install
 $ npm run dev
 ```
 
+## 请喝果汁
+
+如果觉得这篇文章、Demo对你的学习有所帮助，可以请作者喝一杯果汁~~
+
+![](https://www.tycoding.cn/images/wechat.png)
+
 ## 预览
 
 ![](https://www.tycoding.cn/2019/05/30/cloud/cloud-template/2019052814147.png)

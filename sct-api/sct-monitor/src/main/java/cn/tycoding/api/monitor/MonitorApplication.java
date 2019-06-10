@@ -12,7 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date 2019-05-21
  */
 @EnableAdminServer
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class MonitorApplication {
 
