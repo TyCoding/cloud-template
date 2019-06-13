@@ -1,0 +1,527 @@
+2019-06-02 12:53:53,072 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://localhost:8888
+2019-06-02 12:53:53,422 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=sct-admin-biz, profiles=[dev], label=null, version=null, state=null
+2019-06-02 12:53:53,422 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/config/sct-admin-biz-dev.yml'}, MapPropertySource {name='classpath:/config/application-dev.yml'}]}
+2019-06-02 12:53:53,486 [main] INFO  [cn.tycoding.api.admin.biz.AdminBizApplication] SpringApplication.java:679 - The following profiles are active: dev
+2019-06-02 12:53:54,518 [main] INFO  [o.s.context.annotation.AutoProxyRegistrar] AutoProxyRegistrar.java:82 - AutoProxyRegistrar was imported but no annotations were found having both 'mode' and 'proxyTargetClass' attributes of type AdviceMode and boolean respectively. This means that auto proxy creator registration and configuration may not have occurred as intended, and components may not be proxied as expected. Check to ensure that AutoProxyRegistrar has been @Import'ed on the same class where these annotations are declared; otherwise remove the import of AutoProxyRegistrar altogether.
+2019-06-02 12:53:54,711 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] Logger.java:44 - No MyBatis mapper was found in '[cn.tycoding.api.admin.biz]' package. Please check your configuration.
+2019-06-02 12:53:55,060 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:135 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-02 12:53:55,721 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=48a3c54b-db76-3d6c-b771-16d4aed834e8
+2019-06-02 12:53:56,380 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5a0750e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,455 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$5e4e3d48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,467 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,482 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2c9306d3' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,483 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8322dffa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,502 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration' of type [org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration$$EnhancerBySpringCGLIB$$a877f810] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,506 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'jsr250MethodSecurityMetadataSource' of type [org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,507 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,532 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e1ba780b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:56,542 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration$$EnhancerBySpringCGLIB$$a9d076d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-02 12:53:57,035 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:90 - Tomcat initialized with port(s): 4100 (http)
+2019-06-02 12:53:57,052 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-4100"]
+2019-06-02 12:53:57,062 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2019-06-02 12:53:57,063 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-02 12:53:57,238 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2019-06-02 12:53:57,239 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 3721 ms
+2019-06-02 12:53:57,480 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-06-02 12:53:57,482 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-02 12:53:57,503 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2cee5365
+2019-06-02 12:53:59,333 [main] INFO  [o.s.b.a.endpoint.web.ServletEndpointRegistrar] ServletEndpointRegistrar.java:78 - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2019-06-02 12:54:00,446 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:59 - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-02 12:54:00,681 [main] INFO  [s.d.s.w.PropertySourcedRequestMappingHandlerMapping] PropertySourcedRequestMappingHandlerMapping.java:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-02 12:54:00,974 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-06-02 12:54:00,975 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-02 12:54:01,354 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-02 12:54:02,626 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService
+2019-06-02 12:54:03,464 [main] INFO  [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] UserDetailsServiceAutoConfiguration.java:87 - 
+
+Using generated security password: 2bda8264-38a6-467a-b898-d1951daf5065
+
+2019-06-02 12:54:03,971 [main] INFO  [c.t.api.admin.api.config.ResourceServerConfig] ResourceServerConfig.java:17 - 加载了 >> ResourceServerConfig...
+2019-06-02 12:54:04,136 [main] INFO  [o.s.security.web.DefaultSecurityFilterChain] DefaultSecurityFilterChain.java:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b33deed, org.springframework.security.web.context.SecurityContextPersistenceFilter@357cdb00, org.springframework.security.web.header.HeaderWriterFilter@720c0996, org.springframework.security.web.authentication.logout.LogoutFilter@1ff23bd1, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5819ee0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ac326c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2570851e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fd32c56, org.springframework.security.web.session.SessionManagementFilter@52fec840, org.springframework.security.web.access.ExceptionTranslationFilter@ea0c99c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c157abf]
+2019-06-02 12:54:05,855 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
+2019-06-02 12:54:05,941 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2019-06-02 12:54:06,031 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2019-06-02 12:54:06,038 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2019-06-02 12:54:06,761 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2019-06-02 12:54:06,762 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2019-06-02 12:54:07,106 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 12:54:07,145 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:958 - Disable delta property : false
+2019-06-02 12:54:07,145 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:959 - Single vip registry refresh property : null
+2019-06-02 12:54:07,145 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:960 - Force full registry fetch : false
+2019-06-02 12:54:07,146 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:961 - Application is null : false
+2019-06-02 12:54:07,146 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:962 - Registered Applications size is zero : true
+2019-06-02 12:54:07,146 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:964 - Application version is -1: true
+2019-06-02 12:54:07,146 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1047 - Getting all instance registry info from the eureka server
+2019-06-02 12:54:07,346 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1056 - The response status is 200
+2019-06-02 12:54:07,359 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1270 - Starting heartbeat executor: renew interval is: 30
+2019-06-02 12:54:07,377 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator] InstanceInfoReplicator.java:60 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-02 12:54:07,394 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:449 - Discovery Client initialized at timestamp 1559451247388 with initial instances count: 1
+2019-06-02 12:54:07,436 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application SCT-ADMIN-BIZ with eureka with status UP
+2019-06-02 12:54:07,437 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1305 - Saw local status change event StatusChangeEvent [timestamp=1559451247437, current=UP, previous=STARTING]
+2019-06-02 12:54:07,440 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:826 - DiscoveryClient_SCT-ADMIN-BIZ/169.254.203.48:sct-admin-biz:4100: registering service...
+2019-06-02 12:54:07,448 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:160 - Context refreshed
+2019-06-02 12:54:07,496 [main] INFO  [s.d.s.web.plugins.DocumentationPluginsBootstrapper] DocumentationPluginsBootstrapper.java:163 - Found 1 custom documentation plugin(s)
+2019-06-02 12:54:07,535 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:835 - DiscoveryClient_SCT-ADMIN-BIZ/169.254.203.48:sct-admin-biz:4100 - registration status: 204
+2019-06-02 12:54:07,643 [main] INFO  [s.d.spring.web.scanners.ApiListingReferenceScanner] ApiListingReferenceScanner.java:41 - Scanning for api listing references
+2019-06-02 12:54:07,884 [main] INFO  [s.d.s.w.r.operation.CachingOperationNameGenerator] CachingOperationNameGenerator.java:40 - Generating unique operation named: infoUsingGET_1
+2019-06-02 12:54:08,117 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-4100"]
+2019-06-02 12:54:08,192 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:204 - Tomcat started on port(s): 4100 (http) with context path ''
+2019-06-02 12:54:08,193 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:143 - Updating port to 4100
+2019-06-02 12:54:08,197 [main] INFO  [cn.tycoding.api.admin.biz.AdminBizApplication] StartupInfoLogger.java:59 - Started AdminBizApplication in 17.912 seconds (JVM running for 19.624)
+2019-06-02 12:54:08,261 [registrationTask1] WARN  [d.c.b.a.client.registration.ApplicationRegistrator] ApplicationRegistrator.java:115 - Failed to register application as Application(name=sct-admin-biz, managementUrl=http://localhost:4100/actuator, healthUrl=http://localhost:4100/actuator/health, serviceUrl=http://localhost:4100/) at spring-boot-admin ([http://localhost:5001/instances]): I/O error on POST request for "http://localhost:5001/instances": Connect to localhost:5001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:5001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2019-06-02 12:54:08,812 [RMI TCP Connection(2)-127.0.0.1] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:110 - HikariPool-1 - Starting...
+2019-06-02 12:54:08,837 [RMI TCP Connection(1)-127.0.0.1] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-02 12:54:08,841 [RMI TCP Connection(1)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:524 - Initializing Servlet 'dispatcherServlet'
+2019-06-02 12:54:08,957 [RMI TCP Connection(1)-127.0.0.1] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:546 - Completed initialization in 115 ms
+2019-06-02 12:54:09,495 [RMI TCP Connection(2)-127.0.0.1] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:123 - HikariPool-1 - Start completed.
+2019-06-02 12:54:09,734 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://localhost:8888
+2019-06-02 12:54:10,087 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=sct-admin-biz, profiles=[dev], label=null, version=null, state=null
+2019-06-02 12:59:07,154 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 13:04:07,167 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 13:08:25,357 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,357 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,356 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,359 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,356 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,371 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:08:25,448 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,448 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,451 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,448 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,453 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,452 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:08:25,497 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:25,497 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:25,497 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:25,498 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:25,586 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:25,598 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:08:27,165 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: sct-zipkin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-06-02 13:08:27,229 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-sct-zipkin
+2019-06-02 13:08:27,232 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: sct-zipkin instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sct-zipkin,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-06-02 13:08:27,249 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
+2019-06-02 13:08:27,264 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client sct-zipkin initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sct-zipkin,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5f4c5218
+2019-06-02 13:09:07,184 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 13:10:10,071 [http-nio-4100-exec-10] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://localhost:8888
+2019-06-02 13:10:10,703 [http-nio-4100-exec-10] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=sct-admin-biz, profiles=[dev], label=null, version=null, state=null
+2019-06-02 13:11:29,380 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:11:29,397 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:11:29,404 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:11:30,804 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:11:30,807 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:11:30,810 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:12:11,881 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:12:11,889 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:12:11,891 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:12:15,131 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:12:15,134 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:12:15,154 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:12:22,938 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:12:22,948 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:12:22,952 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:12:45,965 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:12:45,968 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:12:45,970 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:13:08,737 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:13:08,742 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:13:08,749 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:13:24,741 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:13:24,743 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:13:24,747 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:07,195 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 13:14:09,843 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:09,844 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:09,847 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:25,502 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:25,505 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:25,512 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:32,461 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:32,469 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:32,474 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:35,562 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:35,563 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:35,567 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:37,303 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:37,304 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:37,306 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:39,686 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:39,688 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:39,692 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:14:54,320 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:14:54,328 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:14:54,331 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:15:24,906 [http-nio-4100-exec-1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://localhost:8888
+2019-06-02 13:15:25,077 [http-nio-4100-exec-1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=sct-admin-biz, profiles=[dev], label=null, version=null, state=null
+2019-06-02 13:15:28,607 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:15:28,608 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:15:28,610 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:15:46,437 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:15:46,438 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:15:46,442 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:15:47,342 [http-nio-4100-exec-7] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT count(0) FROM sys_user 
+2019-06-02 13:15:47,345 [http-nio-4100-exec-7] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==> Parameters: 
+2019-06-02 13:15:47,353 [http-nio-4100-exec-7] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:15:47,357 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user LIMIT ? 
+2019-06-02 13:15:47,359 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: 3(Integer)
+2019-06-02 13:15:47,364 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 3
+2019-06-02 13:15:55,213 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:15:55,213 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:15:55,214 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:16:19,706 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:16:19,715 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:16:19,717 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:16:53,700 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:16:53,707 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:16:53,711 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:16:55,258 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:16:55,260 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:16:55,266 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:09,037 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:09,038 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:09,040 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:11,319 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:11,320 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:11,321 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:18,170 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:18,172 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:18,175 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:25,453 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:25,454 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:25,455 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:28,422 [PollingServerListUpdater-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: sct-zipkin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-06-02 13:17:37,090 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:37,092 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:37,099 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:39,635 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:39,637 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:39,641 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:45,832 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:45,833 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:45,835 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:49,912 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:49,913 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:49,916 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:17:51,566 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:17:51,568 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:17:51,570 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:00,578 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:00,579 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:00,581 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:02,699 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:02,700 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:02,702 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:07,985 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:07,988 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:07,989 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:09,446 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:09,446 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:09,447 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:11,043 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:11,044 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:11,048 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:12,850 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:12,851 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:12,853 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:14,172 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:14,174 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:14,177 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:15,728 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:15,728 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:15,730 [http-nio-4100-exec-1] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:17,520 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:17,521 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:17,522 [http-nio-4100-exec-2] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:21,098 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:21,102 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:21,103 [http-nio-4100-exec-8] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:22,215 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:22,216 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:22,218 [http-nio-4100-exec-7] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:24,209 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:24,210 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:24,212 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:30,956 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:18:30,958 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:18:30,960 [http-nio-4100-exec-10] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:31,618 [http-nio-4100-exec-3] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT count(0) FROM sys_user 
+2019-06-02 13:18:31,619 [http-nio-4100-exec-3] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==> Parameters: 
+2019-06-02 13:18:31,621 [http-nio-4100-exec-3] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:31,624 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user LIMIT ? 
+2019-06-02 13:18:31,625 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: 3(Integer)
+2019-06-02 13:18:31,628 [http-nio-4100-exec-3] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 3
+2019-06-02 13:18:34,138 [http-nio-4100-exec-4] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE id = ? 
+2019-06-02 13:18:34,142 [http-nio-4100-exec-4] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==> Parameters: 5(Long)
+2019-06-02 13:18:34,145 [http-nio-4100-exec-4] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:38,167 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE id = ? 
+2019-06-02 13:18:38,171 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==> Parameters: 1(Long)
+2019-06-02 13:18:38,176 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:56,735 [http-nio-4100-exec-2] INFO  [c.t.api.admin.biz.controller.UploadController] UploadController.java:52 - 文件的保存路径：/tycoding/cloud/sct/sct-api/sct-admin/sct-admin-biz/target/classes/static/upload
+2019-06-02 13:18:56,741 [http-nio-4100-exec-2] INFO  [c.t.api.admin.biz.controller.UploadController] UploadController.java:60 - 原始文件名称：fly.jpg
+2019-06-02 13:18:56,742 [http-nio-4100-exec-2] INFO  [c.t.api.admin.biz.controller.UploadController] UploadController.java:64 - 文件类型：jpg
+2019-06-02 13:18:56,743 [http-nio-4100-exec-2] INFO  [c.t.api.admin.biz.controller.UploadController] UploadController.java:68 - 新文件名称：177675115.jpg
+2019-06-02 13:18:56,745 [http-nio-4100-exec-2] INFO  [c.t.api.admin.biz.controller.UploadController] UploadController.java:75 - 上传成功
+2019-06-02 13:18:58,128 [http-nio-4100-exec-7] DEBUG [c.t.api.admin.biz.mapper.SysUserMapper.insert] BaseJdbcLogger.java:143 - ==>  Preparing: INSERT INTO sys_user ( id,username,password,phone,avatar,create_time ) VALUES( ?,?,?,?,?,? ) 
+2019-06-02 13:18:58,144 [http-nio-4100-exec-7] DEBUG [c.t.api.admin.biz.mapper.SysUserMapper.insert] BaseJdbcLogger.java:143 - ==> Parameters: null, 11(String), $2a$10$dUcf47Uie/TJB9ghdXDspu1ChI9PCvKfRdWj4OiQod0RrrZkGcDW.(String), 111(String), http://127.0.0.1:4100/upload/177675115.jpg(String), 2019-06-02 13:18:44.0(Timestamp)
+2019-06-02 13:18:58,159 [http-nio-4100-exec-7] DEBUG [c.t.api.admin.biz.mapper.SysUserMapper.insert] BaseJdbcLogger.java:143 - <==    Updates: 1
+2019-06-02 13:18:58,228 [http-nio-4100-exec-9] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT count(0) FROM sys_user 
+2019-06-02 13:18:58,230 [http-nio-4100-exec-9] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==> Parameters: 
+2019-06-02 13:18:58,234 [http-nio-4100-exec-9] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:18:58,235 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user LIMIT ? 
+2019-06-02 13:18:58,236 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: 3(Integer)
+2019-06-02 13:18:58,239 [http-nio-4100-exec-9] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 3
+2019-06-02 13:19:00,250 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT count(0) FROM sys_user 
+2019-06-02 13:19:00,251 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==> Parameters: 
+2019-06-02 13:19:00,251 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:19:00,252 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user LIMIT ?, ? 
+2019-06-02 13:19:00,253 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: 3(Integer), 3(Integer)
+2019-06-02 13:19:00,254 [http-nio-4100-exec-5] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 3
+2019-06-02 13:19:01,723 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT count(0) FROM sys_user 
+2019-06-02 13:19:01,724 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - ==> Parameters: 
+2019-06-02 13:19:01,727 [http-nio-4100-exec-6] DEBUG [c.t.a.a.b.m.SysUserMapper.selectByExample_COUNT] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:19:01,729 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user LIMIT ? 
+2019-06-02 13:19:01,730 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: 3(Integer)
+2019-06-02 13:19:01,733 [http-nio-4100-exec-6] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 3
+2019-06-02 13:19:03,136 [http-nio-4100-exec-1] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE id = ? 
+2019-06-02 13:19:03,136 [http-nio-4100-exec-1] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==> Parameters: 5(Long)
+2019-06-02 13:19:03,138 [http-nio-4100-exec-1] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:19:07,211 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2019-06-02 13:20:24,950 [http-nio-4100-exec-1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://localhost:8888
+2019-06-02 13:20:25,193 [http-nio-4100-exec-1] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=sct-admin-biz, profiles=[dev], label=null, version=null, state=null
+2019-06-02 13:21:46,662 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE id = ? 
+2019-06-02 13:21:46,666 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - ==> Parameters: 5(Long)
+2019-06-02 13:21:46,669 [http-nio-4100-exec-5] DEBUG [c.t.a.a.b.mapper.SysUserMapper.selectByPrimaryKey] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:21:52,766 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==>  Preparing: SELECT id,username,password,phone,avatar,create_time FROM sys_user WHERE ( ( username= ? ) ) 
+2019-06-02 13:21:52,767 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - ==> Parameters: tycoding(String)
+2019-06-02 13:21:52,770 [http-nio-4100-exec-4] DEBUG [c.t.a.a.biz.mapper.SysUserMapper.selectByExample] BaseJdbcLogger.java:143 - <==      Total: 1
+2019-06-02 13:22:26,960 [Thread-54] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2019-06-02 13:22:26,979 [Thread-42] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application SCT-ADMIN-BIZ with eureka with status DOWN
+2019-06-02 13:22:26,983 [Thread-42] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1303 - Saw local status change event StatusChangeEvent [timestamp=1559452946983, current=DOWN, previous=UP]
+2019-06-02 13:22:26,992 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:826 - DiscoveryClient_SCT-ADMIN-BIZ/169.254.203.48:sct-admin-biz:4100: registering service...
+2019-06-02 13:22:27,044 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:835 - DiscoveryClient_SCT-ADMIN-BIZ/169.254.203.48:sct-admin-biz:4100 - registration status: 204
+2019-06-02 13:22:27,065 [Thread-42] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService
+2019-06-02 13:22:27,084 [Thread-42] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-02 13:22:27,680 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2019-06-02 13:22:27,683 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-02 13:22:27,685 [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@677cc4e8}] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4682693b
+2019-06-02 13:22:27,702 [Thread-42] WARN  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:1012 - Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:179)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-06-02 13:22:27,707 [Thread-42] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-sct-zipkin
+2019-06-02 13:22:27,707 [Thread-42] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-06-02 13:22:27,732 [Thread-42] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2019-06-02 13:22:30,738 [Thread-42] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:922 - Unregistering ...
+2019-06-02 13:22:30,763 [Thread-42] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://sct-eureka:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 41 common frames omitted
+2019-06-02 13:22:30,789 [Thread-42] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-06-02 13:22:30,793 [Thread-42] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://sct-eureka:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 42 common frames omitted
+2019-06-02 13:22:30,795 [Thread-42] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-06-02 13:22:30,797 [Thread-42] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:926 - DiscoveryClient_SCT-ADMIN-BIZ/169.254.203.48:sct-admin-biz:4100 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2019-06-02 13:22:30,882 [Thread-42] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2019-06-02 13:22:30,885 [Thread-42] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:350 - HikariPool-1 - Shutdown initiated...
+2019-06-02 13:22:30,919 [Thread-42] INFO  [com.zaxxer.hikari.HikariDataSource] HikariDataSource.java:352 - HikariPool-1 - Shutdown completed.
