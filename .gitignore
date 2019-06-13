@@ -9,3 +9,6 @@ Thumbs.db
 **/.factorypath
 **/target/*
 **/*.iml
+
+
+**/logs/*
