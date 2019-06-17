@@ -115,7 +115,7 @@ $ npm run dev
 
 如果觉得这篇文章、Demo对你的学习有所帮助，可以请作者喝一杯果汁~~
 
-![](https://www.tycoding.cn/images/wechat.png)
+![](doc/wechat.png)
 
 ## 预览
 
