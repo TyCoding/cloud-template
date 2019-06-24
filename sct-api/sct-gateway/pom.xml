@@ -31,7 +31,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.tycoding.api.auth.AuthApplication</mainClass>
+                    <mainClass>cn.tycoding.api.gateway.GatewayApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
