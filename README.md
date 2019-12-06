@@ -24,6 +24,8 @@
 
 ## 写在前面
 
+简单录制了一个项目启动视频，需要的话可以看下：https://www.bilibili.com/video/av78215622
+
 在开始此项目前，请先学习这个基础项目模板 [cloud-template](https://github.com/TyCoding/cloud-template/tree/master/cloud-template) ，并仔细阅读以下开发文档：
 
 [从零开始搭建Spring Cloud脚手架](https://www.tycoding.cn/2019/05/30/cloud/cloud-template-api/)
