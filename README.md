@@ -137,7 +137,9 @@ $ npm run dev
 
 ## 联系
 
-QQ交流群：671017003
+QQGroup：671017003
+
+QQGroup2：490303233
 
 - [Blog@TyCoding's blog](http://www.tycoding.cn)
 - [GitHub@TyCoding](https://github.com/TyCoding)
