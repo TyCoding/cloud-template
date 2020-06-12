@@ -32,6 +32,13 @@
 
 [如何食用vue-admin-template前端项目](https://www.tycoding.cn/2019/05/30/cloud/cloud-template-app/)
 
+更多文档将在我的公众号 **程序员涂陌** 中陆续发布，请持续关注！
+
+| 程序员涂陌                                                  |
+| ----------------------------------------------------------- |
+| ![qrcode_for_gh](http://cdn.tycoding.cn/20200610184737.jpg) |
+
+
 ## Spring Cloud Template
 
 * 一套极简的Spring Cloud微服务项目模板，开箱即用，方便扩展
